@@ -3,12 +3,11 @@
 ---@class IAttribute
 local IAttribute = {}
 
-
 ---Gets the unique identifier of the widget.
 ---@return integer # The unique identifier of the widget.
 function IAttribute.getID() end
 
----Sets the visibilility of the widget.
+---Sets the visibility of the widget.
 ---@param visible boolean # The new visibility status of the widget.
 function IAttribute.setVisible(visible) end
 

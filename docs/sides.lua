@@ -1,16 +1,16 @@
----@meta 'sides'
+---@meta "sides"
 
 ---@class sides
 local sides = {}
 
 -- lookups
-sides[0] = 'bottom'
-sides[1] = 'top'
-sides[2] = 'back'
-sides[3] = 'front'
-sides[4] = 'right'
-sides[5] = 'left'
-sides[6] = 'unknown'
+sides[0] = "bottom"
+sides[1] = "top"
+sides[2] = "back"
+sides[3] = "front"
+sides[4] = "right"
+sides[5] = "left"
+sides[6] = "unknown"
 
 -- cardinal
 sides.north = 2

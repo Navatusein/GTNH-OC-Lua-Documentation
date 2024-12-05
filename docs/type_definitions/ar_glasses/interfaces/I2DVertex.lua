@@ -3,7 +3,6 @@
 ---@class I2DVertex: IAttribute
 local I2DVertex = {}
 
-
 ---Sets the position of a vertex of this widget.
 ---@param vertexId integer # The id of the vertex to change.
 ---@param x number # The new x position of the vertex.

@@ -3,7 +3,6 @@
 ---@class IColorizable: IAttribute
 local IColorizable = {}
 
-
 ---Sets the color of a widget.
 ---@param r number # The red component from `0.0` to `1.0`.
 ---@param g number # The green component from `0.0` to `1.0`.

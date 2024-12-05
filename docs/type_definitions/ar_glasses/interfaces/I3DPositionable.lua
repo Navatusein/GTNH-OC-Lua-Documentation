@@ -3,7 +3,6 @@
 ---@class I3DPositionable: IAttribute
 local I3DPositionable = {}
 
-
 ---Sets the origin position of a 3d widget relative to the position of the glasses terminal.
 ---@param x number # The new x position of the vertex in the world relative to the position of the glasses terminal.
 ---@param y number # The new y position of the vertex in the world relative to the position of the glasses terminal.
