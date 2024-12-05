@@ -1,4 +1,4 @@
-# GTNH-OCLuaDocumentation
+# GTNH-OC-Lua-Documentation
 Basic Lua documentation for Open Computer types for use with GTNH
 ![An example of the autocomplete documentation in action in vs code.](example.png)
 
