@@ -1,0 +1,14 @@
+---@meta _
+
+---@class LevelMaintainerSlot
+---@field name string  # The item id
+---@field label string  # The name of the item
+---@field damage integer # The damage of the item
+---@field maxDamage integer # The maximum amount of damage that can be applied to the item
+---@field hasTag boolean # True if the item has nbt tags
+---@field batch integer # The amount of items to craft per craft request
+---@field quantity integer # The amount of items to stock
+---@field isDone boolean # True if the level maintainer is done crafting
+---@field isEnable boolean # True if the slot is enabled
+---@field isFluid boolean # True if the item is a fluid
+---@field fluid FluidStack? # The fluid stack if the thing to maintain is a fluid 
