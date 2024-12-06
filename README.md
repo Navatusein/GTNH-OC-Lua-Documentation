@@ -18,7 +18,7 @@ This documentation is written for the VS Code IDE and Lua extension by sumneko.
 It adds autocomplete code and function descriptions of Open Computers components and libraries. 
 
 > [!NOTE]  
-> The documentation is written using generative models of artificial intelligence.
+> The documentation is written using generative models of artificial intelligence (ChatGPT). So mistakes are not excluded, feel free to write I will correct.
 
 ![An example of the autocomplete documentation in action in vs code.](docs/example-use.png)
 
