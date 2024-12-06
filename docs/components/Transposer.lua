@@ -7,9 +7,10 @@ local transposer = {}
 ---Transfer some fluids between two fluid handlers (pipes or tanks, etc).
 ---@param sourceSide integer # The side pulled from.
 ---@param sinkSide integer # The side transferred to.
----@param count integer # The number of millibuckets to transfer. Defaults to 1000 if not specified.
----@return boolean, number|string # Returns true and the number of millibuckets transferred on success, or false and an error message on failure.
-function transposer.transferFluid(sourceSide, sinkSide, count) end
+---@param count integer|nil # The number of millibuckets to transfer. Defaults to 1000.
+---@param sourceTank integer|nil # The tank index to pull from.
+---@return boolean, number # Returns true and the number of millibuckets transferred, or false and an error message.
+function transposer.transferFluid(sourceSide, sinkSide, count, sourceTank) end
 
 ---Store an item stack description in the database.
 ---@param side integer # The side of the inventory.
@@ -50,9 +51,9 @@ function transposer.getInventoryName(side) end
 ---@return integer # The number of slots in the inventory.
 function transposer.getInventorySize(side) end
 
----Get a description of the fluid in a specific tank.
+---Get the description of the fluid in a tank or container.
 ---@param side integer # The side of the device.
----@param tank integer # The tank number.
+---@param tank integer|nil # The tank index. Defaults to nil.
 ---@return FluidStack # A table describing the fluid in the tank.
 function transposer.getFluidInTank(side, tank) end
 
@@ -65,19 +66,20 @@ function transposer.getTankLevel(side, tank) end
 ---Transfer items between inventories.
 ---@param sourceSide integer # The side to transfer items from.
 ---@param sinkSide integer # The side to transfer items to.
----@param count integer # The number of items to transfer.
+---@param count integer|nil # The number of items to transfer.
 ---@param sourceSlot integer|nil # The slot in the source inventory.
 ---@param sinkSlot integer|nil # The slot in the target inventory.
 ---@return integer # The number of items transferred.
 function transposer.transferItem(sourceSide, sinkSide, count, sourceSlot, sinkSlot) end
 
----Compare items in two slots of the same inventory.
+---Compare an item in the inventory with one in the database.
 ---@param side integer # The side of the inventory.
----@param slotA integer # The first slot.
----@param slotB integer # The second slot.
+---@param slot integer # The slot number.
+---@param dbAddress string # The database address.
+---@param dbSlot integer # The database slot.
 ---@param checkNBT boolean|nil # Whether to check NBT data. Defaults to false.
----@return boolean # Returns true if the items match, false otherwise.
-function transposer.compareStacks(side, slotA, slotB, checkNBT) end
+---@return boolean # True if items match, false otherwise.
+function transposer.compareStackToDatabase(side, slot, dbAddress, dbSlot, checkNBT) end
 
 ---Check if two stacks are equivalent based on shared OreDictionary IDs.
 ---@param side integer # The side of the inventory.
@@ -118,3 +120,62 @@ function transposer.count() end
 
 ---Reset the iterator for the internal array of stacks.
 function transposer.reset() end
+
+---Transfer fluid from a tank to a container.
+---@param tankSide integer # The side of the tank.
+---@param inventorySide integer # The side of the inventory.
+---@param inventorySlot integer # The slot in the inventory.
+---@param count integer|nil # The number of millibuckets to transfer.
+---@param sourceTank integer|nil # The source tank index.
+---@param outputSide integer|nil # The output side.
+---@param outputSlot integer|nil # The output slot.
+---@return boolean, number # Returns true and the number of millibuckets transferred, or false and an error message.
+function transposer.transferFluidFromTankToContainer(tankSide, inventorySide, inventorySlot, count, sourceTank, outputSide, outputSlot) end
+
+---Transfer fluid from a container to a tank.
+---@param inventorySide integer # The side of the inventory.
+---@param inventorySlot integer # The slot in the inventory.
+---@param tankSide integer # The side of the tank.
+---@param count integer|nil # The number of millibuckets to transfer.
+---@param outputSide integer|nil # The output side.
+---@param outputSlot integer|nil # The output slot.
+---@return boolean, number # Returns true and the number of millibuckets transferred, or false and an error message.
+function transposer.transferFluidFromContainerToTank(inventorySide, inventorySlot, tankSide, count, outputSide, outputSlot) end
+
+---Transfer fluid between two containers.
+---@param sourceSide integer # The source inventory side.
+---@param sourceSlot integer # The source slot in the inventory.
+---@param sinkSide integer # The sink inventory side.
+---@param sinkSlot integer # The sink slot in the inventory.
+---@param count integer|nil # The number of millibuckets to transfer.
+---@param sourceOutputSide integer|nil # The source output side.
+---@param sinkOutputSide integer|nil # The sink output side.
+---@param sourceOutputSlot integer|nil # The source output slot.
+---@param sinkOutputSlot integer|nil # The sink output slot.
+---@return boolean, number # Returns true and the number of millibuckets transferred, or false and an error message.
+function transposer.transferFluidBetweenContainers(sourceSide, sourceSlot, sinkSide, sinkSlot, count, sourceOutputSide, sinkOutputSide, sourceOutputSlot, sinkOutputSlot) end
+
+---Set the display name of the stack in the inventory.
+---@param side integer # The side of the inventory.
+---@param slot integer # The slot number.
+---@param label string # The new display name for the stack.
+---@return boolean # Returns true if successful.
+function transposer.setStackDisplayName(side, slot, label) end
+
+---Get the description of the fluid in a container.
+---@param side integer # The side of the inventory.
+---@param slot integer # The slot number.
+---@return FluidStack # A table describing the fluid in the container.
+function transposer.getFluidInContainerInSlot(side, slot) end
+
+---Get the capacity of a fluid container in a specific slot.
+---@param side integer # The side of the inventory.
+---@param slot integer # The slot number.
+---@return integer # The capacity of the fluid container.
+function transposer.getContainerCapacityInSlot(side, slot) end
+
+---Get the fluid level in a container.
+---@param side integer # The side of the inventory.
+---@param slot integer # The slot number.
+---@return integer # The fluid level in the container.
+function transposer.getContainerLevelInSlot(side, slot) end
