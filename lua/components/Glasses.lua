@@ -1,6 +1,7 @@
 ---@meta _
 
 ---@class glasses : BaseComponent
+---@field type "glasses"
 local glasses = {}
 
 ---Lists the name of all the players currently wearing ar glasses linked to the terminal that are online.
