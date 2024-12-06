@@ -5,7 +5,7 @@
 
 
 ## Content
-- [Information](#how-to-install)
+- [Information](#information)
 - [How to install](#how-to-install)
 - [How to use](#how-to-use)
 - [What's already done](#what-already-done)
