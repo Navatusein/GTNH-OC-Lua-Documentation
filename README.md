@@ -76,6 +76,7 @@ At the moment documentation has been written for the following libraries:
 Documentation is also ready for the following components:
 
 - database
+- glasses
 - gpu
 - gt_machine
 - level_maintainer
