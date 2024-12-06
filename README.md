@@ -52,7 +52,7 @@ If you want to use documentation for components, pass the component type as para
   local proxy = component.getPrimary("type")
   ```
 
-For a list of supported components, see in the section [What's already done](#what-already-done-components)
+For a list of supported components, see the section [What's already done](#what-already-done-components)
 
 ![An example of autocomplete documentation from component.](docs/example-component.png)
 
