@@ -29,7 +29,7 @@ It adds autocomplete code and function descriptions of Open Computers components
 1. Install extension `Lua by sumneko`: [link](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
 2. Open the VS code settings (<kbd>Ctrl</kbd>+<kbd>,</kbd>).
 3. Search for `Lua.workspace.library`.
-4. Click `Add Item` and enter the path to `docs` folder in the input.
+4. Click `Add Item` and enter the path to `lua` folder in the input.
 5. Click OK
 
 ![Add the path to the the docs in the Lua.workspace.library setting.](docs/how-to-install.png)
