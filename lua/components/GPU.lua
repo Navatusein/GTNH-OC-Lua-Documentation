@@ -126,7 +126,7 @@ function gpu.get(x, y) end
 ---@param y integer # The y coordinate of the start of the text
 ---@param value string # The string to display
 ---@param vertical? boolean # Set to true to display the text vertically, defaults to false.
----@return string char # True if the string was displayed succesfully
+---@return string char # True if the string was displayed successfully
 function gpu.set(x, y, value, vertical) end
 
 ---Copies a portion of the screens buffer to another location.
