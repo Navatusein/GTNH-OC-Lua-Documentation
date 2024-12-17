@@ -62,19 +62,25 @@ For a list of supported components, see the section [What's already done](#what-
 
 At the moment documentation has been written for the following libraries:
 
+- buffer
 - colors
 - component
 - event
+- internet
 - keyboard
 - os
 - robot
 - serialization
+- shell
 - sides
+- term
+- uuid
 
 <a id="what-already-done-components"></a>
 
 Documentation is also ready for the following components:
 
+- aemultipart
 - database
 - glasses
 - gpu
