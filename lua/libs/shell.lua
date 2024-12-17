@@ -41,7 +41,7 @@ function shell.resolve(path, ext) end
 
 ---Executes a command in the shell environment.
 ---@param command string # The command to execute.
----@param env table # The environment table for the command.
+---@param env? table # The environment table for the command.
 ---@vararg any # Additional arguments passed to the program.
 ---@return boolean, ... # True on success, followed by the command's return values, or false and an error message on failure.
 function shell.execute(command, env, ...) end
