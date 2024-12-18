@@ -89,6 +89,7 @@ Documentation is also ready for the following components:
 - me_controller
 - me_exportbus
 - me_interface
+- reactor_redstone_port
 - redstone
 - screen
 - tilechest
