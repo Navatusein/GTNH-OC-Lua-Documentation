@@ -4,7 +4,7 @@
 ---@field type "tank_controller"
 local tankController = {}
 
----Get the capacity of the tank on the specified side of the robot. Back refers to the robot's own selected tank.
+---Get the capacity of the tank on the specified side.
 ---@param side integer # Which side to look at
 ---@param tank? integer # Which tank in that side to look at
 ---@return integer
