@@ -85,6 +85,7 @@ Documentation is also ready for the following components:
 - glasses
 - gpu
 - gt_machine
+- inventory_controller
 - level_maintainer
 - me_controller
 - me_exportbus
@@ -93,3 +94,4 @@ Documentation is also ready for the following components:
 - screen
 - tilechest
 - transposer
+- tank_controller
