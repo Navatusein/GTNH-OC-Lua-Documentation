@@ -74,6 +74,7 @@ At the moment documentation has been written for the following libraries:
 - shell
 - sides
 - term
+- text
 - uuid
 
 <a id="what-already-done-components"></a>
