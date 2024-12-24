@@ -65,6 +65,7 @@ At the moment documentation has been written for the following libraries:
 - buffer
 - colors
 - component
+- computer
 - event
 - internet
 - keyboard
