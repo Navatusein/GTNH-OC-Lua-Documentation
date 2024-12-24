@@ -1,6 +1,6 @@
 ---@meta "serialization"
 
----@class serialization: BaseComponent
+---@class serialization
 local serialization = {}
 
 ---Serializes a value into a Lua-readable string.
