@@ -25,15 +25,15 @@ function bloodAltar.getProgress() end
 function bloodAltar.getSacrificeMultiplier() end
 
 ---Get the self sacrifice multiplier.
----@return float
+---@return number
 function bloodAltar.getSelfSacrificeMultiplier() end
 
 ---Get the orb multiplier.
----@return float
+---@return number
 function bloodAltar.getOrbMultiplier() end
 
 ---Get the dislocation multiplier.
----@return float
+---@return number
 function bloodAltar.getDislocationMultiplier() end
 
 ---Get IO buffer capacity.
