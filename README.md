@@ -81,12 +81,14 @@ At the moment documentation has been written for the following libraries:
 Documentation is also ready for the following components:
 
 - aemultipart
+- blood_altar
 - database
 - glasses
 - gpu
 - gt_machine
 - inventory_controller
 - level_maintainer
+- master_ritual_stone
 - me_controller
 - me_exportbus
 - me_interface
