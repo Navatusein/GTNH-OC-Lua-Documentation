@@ -3,10 +3,6 @@
 ---@class BaseReactor: BaseComponent
 local reactor = {}
 
----Get the reactor's emitted heat. Useful for fluid reactors.
----@return integer
-function reactor.getEmitHeat() end
-
 ---Get the reactor's heat.
 ---@return integer
 function reactor.getHeat() end
