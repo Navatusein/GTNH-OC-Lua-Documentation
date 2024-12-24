@@ -67,6 +67,7 @@ At the moment documentation has been written for the following libraries:
 - component
 - computer
 - event
+- filesystem
 - internet
 - keyboard
 - os
