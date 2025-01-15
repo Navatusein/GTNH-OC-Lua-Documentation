@@ -96,6 +96,7 @@ Documentation is also ready for the following components:
 - me_controller
 - me_exportbus
 - me_interface
+- modem
 - reactor
 - reactor_chamber
 - reactor_redstone_port
