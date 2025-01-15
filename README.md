@@ -85,6 +85,7 @@ Documentation is also ready for the following components:
 
 - aemultipart
 - blood_altar
+- camera
 - database
 - geolyzer
 - glasses
