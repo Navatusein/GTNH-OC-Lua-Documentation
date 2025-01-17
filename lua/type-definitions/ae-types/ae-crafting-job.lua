@@ -1,7 +1,7 @@
 ---@meta _
 
 ---@class AECraftingJob
----@class type "userdata"
+---@field type "userdata"
 local AECraftingJob = {}
 
 ---Get whether the crafting request is currently computing.
