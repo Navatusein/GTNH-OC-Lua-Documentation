@@ -17,7 +17,7 @@ function AECpu.pendingItems() end
 
 ---Gets the item being crafted by the CPU.
 ---Does not function without a crafting monitor.
----@return ItemStack[]
+---@return ItemStack
 function AECpu.finalOutput() end
 
 ---Attempts to cancel the craft.
