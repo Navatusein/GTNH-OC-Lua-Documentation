@@ -33,7 +33,8 @@ function CommonNetworkAPI.store(filter, dbAddress, startSlot, count) end
 function CommonNetworkAPI.getCpus() end
 
 ---Get a list of known item recipes. These can be used to issue crafting requests.
----@return AECraftable
+---@param filter MEItemStackFilter # A filter of items to look for.
+---@return AECraftable[]
 function CommonNetworkAPI.getCraftables(filter) end
 
 ---Get the average power injection into the network.
