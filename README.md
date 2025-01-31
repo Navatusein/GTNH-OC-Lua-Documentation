@@ -87,6 +87,7 @@ Documentation is also ready for the following components:
 - blood_altar
 - camera
 - database
+- debug
 - geolyzer
 - glasses
 - gpu
