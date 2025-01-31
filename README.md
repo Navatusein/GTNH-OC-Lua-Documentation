@@ -77,6 +77,7 @@ At the moment documentation has been written for the following libraries:
 - sides
 - term
 - text
+- thread
 - uuid
 
 <a id="what-already-done-components"></a>
