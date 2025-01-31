@@ -78,6 +78,7 @@ At the moment documentation has been written for the following libraries:
 - term
 - text
 - thread
+- unicode
 - uuid
 
 <a id="what-already-done-components"></a>
