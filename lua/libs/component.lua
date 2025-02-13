@@ -55,7 +55,7 @@ function component.methods(address) end
 ---Note that proxies will always have at least two fields, type with the component's type name, and address with the component's address.
 ---@generic T
 ---@param address string # The full address of the component.
----@param type `T`
+---@param type? `T`
 ---@return T
 function component.proxy(address, type) end
 
