@@ -110,4 +110,4 @@ Documentation is also ready for the following components:
 - tank_controller
 - tilechest
 - transposer
-- upgrade-me
+- upgrade_me
