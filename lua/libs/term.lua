@@ -17,7 +17,7 @@ function term.isAvailable() end
 function term.getViewport() end
 
 ---Gets the GPU proxy used by the term API.
----@return table # The GPU proxy.
+---@return gpu # The GPU proxy.
 function term.gpu() end
 
 ---Waits for an event, blinking the cursor while waiting.
