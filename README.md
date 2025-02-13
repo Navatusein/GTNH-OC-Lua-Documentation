@@ -88,6 +88,7 @@ Documentation is also ready for the following components:
 - aemultipart
 - blood_altar
 - camera
+- chat-box
 - database
 - debug
 - geolyzer
@@ -106,6 +107,7 @@ Documentation is also ready for the following components:
 - reactor_redstone_port
 - redstone
 - screen
+- tank_controller
 - tilechest
 - transposer
-- tank_controller
+- upgrade-me
