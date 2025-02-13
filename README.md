@@ -70,7 +70,9 @@ At the moment documentation has been written for the following libraries:
 - filesystem
 - internet
 - keyboard
+- note
 - os
+- process
 - robot
 - serialization
 - shell
