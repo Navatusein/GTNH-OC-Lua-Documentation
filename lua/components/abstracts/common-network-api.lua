@@ -8,7 +8,7 @@ local CommonNetworkAPI = {}
 function CommonNetworkAPI.allItems() end
 
 ---Get a list of the stored items in the network.
----@param filter MEItemStackFilter A filter for the query
+---@param filter? MEItemStackFilter A filter for the query
 ---@return MEItemStack[]
 function CommonNetworkAPI.getItemsInNetwork(filter) end
 
