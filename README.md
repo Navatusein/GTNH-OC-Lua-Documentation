@@ -88,7 +88,7 @@ Documentation is also ready for the following components:
 - aemultipart
 - blood_altar
 - camera
-- chat-box
+- chat_box
 - database
 - debug
 - geolyzer
