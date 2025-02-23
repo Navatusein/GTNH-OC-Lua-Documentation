@@ -88,6 +88,7 @@ At the moment documentation has been written for the following libraries:
 Documentation is also ready for the following components:
 
 - aemultipart
+- beekeeper
 - blood_altar
 - camera
 - chat_box
