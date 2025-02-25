@@ -16,6 +16,7 @@
 ---@field transposer transposer
 ---@field redstone redstone
 ---@field modem modem
+---@field tps_card tps_card
 local component = {}
 
 ---Returns the documentation string for the method with the specified name of the component with the specified address, if any.
