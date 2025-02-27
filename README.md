@@ -109,6 +109,7 @@ Documentation is also ready for the following components:
 - reactor_chamber
 - reactor_redstone_port
 - redstone
+- robot
 - screen
 - tank_controller
 - tilechest
