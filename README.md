@@ -112,5 +112,6 @@ Documentation is also ready for the following components:
 - screen
 - tank_controller
 - tilechest
+- tps_card
 - transposer
 - upgrade_me
