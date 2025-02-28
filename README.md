@@ -106,6 +106,7 @@ Documentation is also ready for the following components:
 - [me_exportbus](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/me-exportbus.lua)
 - [me_interface](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/me-interface.lua)
 - [modem](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/modem.lua)
+- [printer3d](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/printer3d.lua)
 - [reactor](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/reactor.lua)
 - [reactor_chamber](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/reactor-chamber.lua)
 - [reactor_redstone_port](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/reactor-redstone-port.lua)
