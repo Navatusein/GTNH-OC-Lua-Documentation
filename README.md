@@ -118,3 +118,4 @@ Documentation is also ready for the following components:
 - tps_card
 - transposer
 - upgrade_me
+- world_sensor
