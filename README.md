@@ -98,6 +98,7 @@ Documentation is also ready for the following components:
 - glasses
 - gpu
 - gt_machine
+- info_panel
 - inventory_controller
 - level_maintainer
 - master_ritual_stone
