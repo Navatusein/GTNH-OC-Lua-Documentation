@@ -119,4 +119,5 @@ Documentation is also ready for the following components:
 - [tps_card](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/tps-card.lua)
 - [transposer](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/transposer.lua)
 - [upgrade_me](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/upgrade-me.lua)
+- [waypoint](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/waypoint.lua)
 - [world_sensor](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/world-sensor.lua)
