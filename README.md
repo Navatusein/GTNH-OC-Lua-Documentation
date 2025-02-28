@@ -112,6 +112,7 @@ Documentation is also ready for the following components:
 - redstone
 - robot
 - screen
+- sign
 - tank_controller
 - tilechest
 - tps_card
