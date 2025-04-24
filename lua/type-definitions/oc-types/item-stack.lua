@@ -10,3 +10,5 @@
 ---@field hasTag boolean # `true` if the item has an NBT tag.
 ---@field tag string? # An encoded version of the NBT tag (looks like the usual zlib encode for BNBT)
 ---@field crop CropNBT? # The data for an analyzed IC2 seed bag.
+---@field inputs MEPatternSlot[]? # The inputs of the pattern
+---@field outputs MEPatternSlot[]? # The outputs of the pattern
