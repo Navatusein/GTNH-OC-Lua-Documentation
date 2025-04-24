@@ -118,6 +118,7 @@ Documentation is also ready for the following components:
 - [robot](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/robot.lua)
 - [screen](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/screen.lua)
 - [sign](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/sign.lua)
+- [stargate](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/stargate.lua)
 - [tank_controller](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/tank-controller.lua)
 - [tierOneTurretBase](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/abstracts/base-turret-base.lua)
 - [tierTwoTurretBase](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/abstracts/base-turret-base.lua)
