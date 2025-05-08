@@ -6,7 +6,7 @@ local event = {}
 ---Register a new event listener for a specific signal.
 ---@param event string # The name of the signal to listen to.
 ---@param callback function # The function to call when the signal is received.
----@return number|false # Event id which can be canceled via event.cancel, if the event was successfully registered, false if this function was already registered for this event type.
+---@return number|false # Event id which can be canceled via event.cancel, false if this function was already registered for this event type.
 function event.listen(event, callback) end
 
 ---Unregister a previously registered event listener.
