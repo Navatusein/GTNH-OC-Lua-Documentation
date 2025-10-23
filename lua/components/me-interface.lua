@@ -30,16 +30,16 @@ function meInterface.setInterfaceConfiguration(slot, dbAddress, dbIndex, count) 
 function meInterface.setInterfaceConfiguration(dbAddress, dbIndex, count) end
 
 ---Gets the fluid being stocked in at the specified slot.
----@param side sides # The index of the side to check.
+---@param side integer # The index of the side to check.
 function meInterface.getFluidInterfaceConfiguration(side) end
 
 ---Clears the fluid being stocked on a given side.
----@param side sides # The side to clear of fluids.
+---@param side integer # The side to clear of fluids.
 ---@return boolean
 function meInterface.setFluidInterfaceConfiguration(side) end
 
 ---Clears out the fluid being stocked on a given side.
----@param side sides   # The side on which to stock the fluid.
+---@param side integer   # The side on which to stock the fluid.
 ---@param dbAddress string  # The address of a database that contains the fluid you want to stock. (stored as an ae2fc drop.)
 ---@param dbIndex integer # The index of the entry containing the fluid to stock.
 ---@return boolean
