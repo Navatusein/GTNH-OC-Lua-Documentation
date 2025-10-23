@@ -1,6 +1,6 @@
 ---@meta "thread"
 
----@class thread
+---@class ThreadLibrary
 local thread = {}
 
 ---Creates a new thread and starts executing the given function.

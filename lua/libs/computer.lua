@@ -1,6 +1,6 @@
 ---@meta "computer"
 
----@class computer
+---@class ComputerLibrary
 local computer = {}
 
 ---Gets the component address of this computer.

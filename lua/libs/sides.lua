@@ -1,6 +1,6 @@
 ---@meta "sides"
 
----@class sides
+---@class SidesLibrary
 local sides = {}
 
 -- lookups

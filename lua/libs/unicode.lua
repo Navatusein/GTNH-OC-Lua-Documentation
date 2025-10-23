@@ -1,6 +1,6 @@
 ---@meta "unicode"
 
----@class unicode
+---@class UnicodeLibrary
 local unicode = {}
 
 ---UTF-8 aware version of `string.char`.  

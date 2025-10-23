@@ -1,6 +1,6 @@
 ---@meta "internet"
 
----@class internet
+---@class InternetLibrary
 local internet = {}
 
 ---Sends an HTTP request to the specified URL.

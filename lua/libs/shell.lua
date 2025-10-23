@@ -1,6 +1,6 @@
 ---@meta "shell"
 
----@class shell
+---@class ShellLibrary
 local shell = {}
 
 ---Gets the value of a specified alias.

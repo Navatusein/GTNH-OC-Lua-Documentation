@@ -1,6 +1,6 @@
 ---@meta "term"
 
----@class term
+---@class TermLibrary
 local term = {}
 
 ---Checks if the term API is available for use.

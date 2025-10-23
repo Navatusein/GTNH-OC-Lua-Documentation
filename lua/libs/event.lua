@@ -1,6 +1,6 @@
 ---@meta "event"
 
----@class event
+---@class EventLibrary
 local event = {}
 
 ---Register a new event listener for a specific signal.

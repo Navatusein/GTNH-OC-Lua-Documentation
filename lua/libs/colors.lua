@@ -1,6 +1,6 @@
 ---@meta "colors"
 
----@class colors
+---@class ColorsLibrary
 local colors = {}
 
 colors.white = 0

@@ -1,6 +1,6 @@
 ---@meta "buffer"
 
----@class buffer
+---@class BufferLibrary
 local buffer = {}
 
 ---Flushes any buffered data, writing it to the stream.
@@ -47,5 +47,5 @@ function buffer:lines(...) end
 ---Creates a new buffered stream.
 ---@param mode string|nil # The mode for the buffer: "r", "w", or "rw". Defaults to "r".
 ---@param stream table # The underlying stream to buffer.
----@return buffer # The new buffered stream.
+---@return BufferLibrary # The new buffered stream.
 function buffer.new(mode, stream) end

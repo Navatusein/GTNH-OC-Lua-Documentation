@@ -1,6 +1,6 @@
 ---@meta "keyboard"
 
----@class keyboard
+---@class keyboardLibrary
 local keyboard = {}
 
 keyboard.keys = {

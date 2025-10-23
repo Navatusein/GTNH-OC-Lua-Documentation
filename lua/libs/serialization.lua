@@ -1,6 +1,6 @@
 ---@meta "serialization"
 
----@class serialization
+---@class SerializationLibrary
 local serialization = {}
 
 ---Serializes a value into a Lua-readable string.

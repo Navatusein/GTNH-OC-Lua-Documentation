@@ -1,6 +1,6 @@
 ---@meta "process"
 
----@class process
+---@class ProcessLibrary
 local process = {}
 
 ---Loads a Lua script from the specified absolute path and sets it up as a process.

@@ -1,6 +1,6 @@
 ---@meta "robot"
 
----@class robot
+---@class RobotLibrary
 local robot = {}
 
 ---Returns the robot's name.

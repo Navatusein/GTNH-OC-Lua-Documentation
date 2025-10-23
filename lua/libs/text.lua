@@ -1,6 +1,6 @@
 ---@meta "text"
 
----@class text
+---@class TextLibrary
 local text = {}
 
 ---Converts tabs in a string to spaces, aligning at the specified tab width.

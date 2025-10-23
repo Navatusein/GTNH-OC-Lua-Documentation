@@ -1,6 +1,6 @@
 ---@meta os
 
----@class oslib
+---@class OsLibrary
 local os = {}
 
 ---Allows pausing a script for the specified amount of time. os.sleep consumes events but registered event handlers and threads are still 

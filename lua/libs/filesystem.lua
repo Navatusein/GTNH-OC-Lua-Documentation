@@ -1,6 +1,6 @@
 ---@meta "filesystem"
 
----@class filesystem
+---@class FilesystemLibrary
 local filesystem = {}
 
 ---Checks if autorun is enabled.
