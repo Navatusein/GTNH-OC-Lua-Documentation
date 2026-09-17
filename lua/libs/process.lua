@@ -13,12 +13,12 @@ local process = {}
 function process.load(path, env, init, name) end
 
 ---Returns a table containing metadata about the specified process.
----@param level number|nil # The stack level. Defaults to 1 (current process). 2 is the parent process, etc.
+---@param levelOrThread? integer|thread # How many levels up to look, or the coroutine to look up. Defaults to 1, the current process.
 ---@return table # A table containing the command, path, and other process data.
-function process.info(level) end
+function process.info(levelOrThread) end
 
 ---(Deprecated) Returns information about the currently running process.
----@param level number|nil # The stack level. Defaults to 1 (current process).
+---@param levelOrThread? integer|thread # How many levels up to look, or the coroutine to look up. Defaults to 1, the current process.
 ---@return string, table, string # The process path, environment table, and process name.
 function process.running(level) end
 

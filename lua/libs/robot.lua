@@ -91,8 +91,9 @@ function robot.compareTo(slot) end
 ---For example stone blocks drop as cobblestone and diamond ores drop diamond items, which are not the same for this function.
 ---Use silk-touch items to retrieve the actual block in the world for comparison.
 ---
+---@param fuzzy? boolean # Whether to ignore the metadata of the blocks. Defaults to false.
 ---@return boolean
-function robot.compare() end
+function robot.compare(fuzzy) end
 
 ---Compares the block over of the robot with the item in the currently selected slot and returns whether they are the same or not.
 ---
@@ -108,8 +109,9 @@ function robot.compare() end
 ---For example stone blocks drop as cobblestone and diamond ores drop diamond items, which are not the same for this function.
 ---Use silk-touch items to retrieve the actual block in the world for comparison.
 ---
+---@param fuzzy? boolean # Whether to ignore the metadata of the blocks. Defaults to false.
 ---@return boolean
-function robot.compareUp() end
+function robot.compareUp(fuzzy) end
 
 ---Compares the block under of the robot with the item in the currently selected slot and returns whether they are the same or not.
 ---
@@ -124,8 +126,9 @@ function robot.compareUp() end
 ---For example stone blocks drop as cobblestone and diamond ores drop diamond items, which are not the same for this function.
 ---Use silk-touch items to retrieve the actual block in the world for comparison.
 ---
+---@param fuzzy? boolean # Whether to ignore the metadata of the blocks. Defaults to false.
 ---@return boolean
-function robot.compareDown() end
+function robot.compareDown(fuzzy) end
 
 ---Tries to drop or store items from the currently selected inventory slot in front of the robot.
 ---
@@ -144,11 +147,10 @@ function robot.compareDown() end
 ---
 ---Note that this will always return false, if the currently selected slot contains no items at all.
 --- 
----@param side integer # What side to drop the item into
 ---@param count? integer # Specifies how many items to drop. If omitted or if count exceeds the amount of items in the currently selected slot, then all items in the currently selected slot are dropped.
 ---@return boolean # `true` if it was able to move at least 1 item.
 ---@return string? # The reason why it wasn't dropped.
-function robot.drop(side, count) end
+function robot.drop(count) end
 
 ---Tries to drop or store items from the currently selected inventory slot above the robot.
 ---

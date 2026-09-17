@@ -54,8 +54,9 @@ function term.clearLine() end
 ---@param dobreak boolean|nil # Whether to add a new line after input (default true).
 ---@param hint table|function|nil # Tab completion hint as a table or callback function.
 ---@param pwchar string|nil # Character to mask input with (e.g., "*").
+---@param filter? string|function # A pattern, or a predicate, that the result must satisfy before it is accepted.
 ---@return string|nil|boolean # Entered string, nil if pipe is closed, false if interrupted.
-function term.read(history, dobreak, hint, pwchar) end
+function term.read(history, dobreak, hint, pwchar, filter) end
 
 ---Writes text to the terminal.
 ---@param value string # The text to write.
@@ -64,7 +65,8 @@ function term.write(value, wrap) end
 
 ---Binds a GPU proxy to the terminal.
 ---@param gpu table # The GPU proxy to bind.
-function term.bind(gpu) end
+---@param window? TtyWindow # The window to bind into. Defaults to the current one.
+function term.bind(gpu, window) end
 
 ---Gets the screen address the terminal is bound to.
 ---@return string # The screen address.

@@ -42,8 +42,9 @@ function text.wrappedLines(value, width, maxWidth) end
 
 ---Splits a string into a table of words using space as the delimiter.
 ---@param value string # The string to tokenize.
+---@param options? table # Tokenizer options, such as `show_escapes` to keep the escape characters.
 ---@return table # A table of tokens (words).
-function text.tokenize(value) end
+function text.tokenize(value, options) end
 
 
 ---Escapes the Lua pattern magic characters in a string, so that it can be used as a

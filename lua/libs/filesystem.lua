@@ -40,8 +40,9 @@ function filesystem.name(path) end
 
 ---Gets the proxy of a file system by address or label.
 ---@param filter string # The file system's address or label.
+---@param options? table # Extra options, such as `bind` to bind the proxy to a path.
 ---@return table|nil, string # The proxy if found, otherwise nil and an error message.
-function filesystem.proxy(filter) end
+function filesystem.proxy(filter, options) end
 
 ---Mounts a file system at a specified path.
 ---@param fs table|string # The file system proxy, address, or label.
