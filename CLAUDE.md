@@ -206,9 +206,14 @@ writing or changing a signature.
   reliable (see the buckets in section C). Guessing a name from the source is how you create a
   class that no `component.<name>` will ever resolve to.
 - Keep documentation in English (the repo is English-facing), even when the conversation is not.
-- `git` branches: `main` is the working branch. `gtnh-2.8` is a **backup snapshot of the
-  current (pre-audit) state** — it is not a version pin and must not be treated as a target
-  version. Verify against the fork's default branch.
+- `git` branches: **commit straight to `main`** — that is the working branch here, no feature
+  branch needed. `gtnh-2.8` is a snapshot of the pre-audit state kept in case the old wording
+  is ever wanted back; it is not a version pin and nothing should be verified against it.
+  Verify against the default branch of each mod fork instead.
+- Commit messages follow the existing history: one short imperative line, capitalised, no
+  trailing period and no `feat:`-style prefix (`Add documentation for sound component`,
+  `Fix components after libraries refactor`). Add a body only when the subject line cannot
+  carry the reason for the change.
 
 ## Work plan
 
