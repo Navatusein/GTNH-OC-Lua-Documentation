@@ -221,10 +221,12 @@ function component.type(address) end
 ---@return string? # An optional error message.
 function component.slot(address) end
 
----Should return the fields of a component, but the feature seems to not be working.
+---Returns the fields a component exposes as values rather than as methods.
+---
+---Most components have none, so this usually comes back as an empty table.
 ---@param address string # The full address of the component.
 ---@return table
-function component.slot(address) end
+function component.fields(address) end
 
 ---Tries to resolve an abbreviated address to a full address.
 ---Returns the full address on success, or nil and an error message otherwise.
@@ -253,5 +255,10 @@ function component.getPrimary(type) end
 ---@param type string # The type of component to set a primary for.
 ---@param address string|nil # The address may be partial.
 function component.setPrimary(type, address) end
+
+---Checks whether a component is the primary of its type.
+---@param address string # The full address of the component.
+---@return boolean # True if it is the one `component.<type>` resolves to.
+function component.isPrimary(address) end
 
 return component

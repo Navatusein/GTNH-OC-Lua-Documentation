@@ -82,4 +82,34 @@ function computer.beep(frequency, duration) end
 ---@return table # A table of device information.
 function computer.getDeviceInfo() end
 
+---Returns whether this machine is a robot.
+---@return boolean
+function computer.isRobot() end
+
+---Returns the real world time as a Unix timestamp, in seconds.
+---
+---Unlike `computer.uptime` this is the clock of the machine running the server, not
+---in-game time and not time since the computer started.
+---@return number
+function computer.realTime() end
+
+---Returns a map of program name to the label of the disk it lives on, for the programs
+---the machine knows about.
+---@return table<string, string>
+function computer.getProgramLocations() end
+
+---Returns the list of architectures the CPU of this machine supports.
+---@return string[]
+function computer.getArchitectures() end
+
+---Returns the architecture the machine is currently running.
+---@return string
+function computer.getArchitecture() end
+
+---Switches the machine to another architecture, which reboots it.
+---@param architecture string # One of the names `getArchitectures` returns.
+---@return boolean|nil # True on success, or `nil` and the reason.
+---@return string|nil
+function computer.setArchitecture(architecture) end
+
 return computer
