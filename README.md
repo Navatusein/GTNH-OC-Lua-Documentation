@@ -60,28 +60,45 @@ For a list of supported components, see the section [What's already done](#what-
 
 ## What's already done
 
-At the moment documentation has been written for the following libraries:
+Documentation is ready for these 28 libraries.
 
-- [buffer](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/buffer.lua)
-- [colors](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/colors.lua)
-- [component](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/component.lua)
-- [computer](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/computer.lua)
-- [event](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/event.lua)
-- [filesystem](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/filesystem.lua)
-- [internet](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/internet.lua)
-- [keyboard](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/keyboard.lua)
-- [note](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/note.lua)
-- [os](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/os.lua)
-- [process](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/process.lua)
-- [robot](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/robot.lua)
-- [serialization](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/serialization.lua)
-- [shell](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/shell.lua)
-- [sides](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/sides.lua)
-- [term](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/term.lua)
-- [text](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/text.lua)
-- [thread](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/thread.lua)
-- [unicode](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/unicode.lua)
-- [uuid](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/uuid.lua)
+#### What a script reaches for
+
+| Library | What it is for |
+| --- | --- |
+| [`component`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/component.lua) | the components attached to this machine |
+| [`computer`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/computer.lua) | the machine itself: energy, uptime, signals, shutdown |
+| [`event`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/event.lua) | waiting for and reacting to signals |
+| [`filesystem`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/filesystem.lua) | files and directories, mounts and paths |
+| [`io`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/io.lua) | opening files and the standard streams |
+| [`term`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/term.lua) | reading and writing on the terminal |
+| [`text`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/text.lua) | trimming, padding, wrapping and tokenizing strings |
+| [`unicode`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/unicode.lua) | string functions that count characters, not bytes |
+| [`serialization`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/serialization.lua) | turning tables into text and back |
+| [`os`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/os.lua) | time, environment variables, sleeping, running commands |
+| [`shell`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/shell.lua) | the working directory, aliases, resolving and running programs |
+| [`internet`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/internet.lua) | HTTP requests and TCP sockets |
+| [`thread`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/thread.lua) | running several things at once |
+| [`keyboard`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/keyboard.lua) | key codes and which keys are held down |
+| [`colors`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/colors.lua) | the sixteen dye colours by name |
+| [`sides`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/sides.lua) | the six sides by name, and their opposites |
+| [`note`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/note.lua) | note block pitches by name and frequency |
+| [`uuid`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/uuid.lua) | generating a random address |
+| [`robot`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/robot.lua) | moving, turning and interacting, for a robot |
+| [`bit32`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/bit32.lua) | bitwise operations on 32 bit integers |
+| [`nbt`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/nbt.lua) | reading the NBT trees of a Data Card as plain tables |
+| [`buffer`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/buffer.lua) | the buffered stream that `io.open` returns |
+
+#### Lower level, mostly used by the system
+
+| Library | What it is for |
+| --- | --- |
+| [`tty`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/tty.lua) | the terminal device `term` is built on and inherits from |
+| [`process`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/process.lua) | the process table, environments and handles |
+| [`package`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/package.lua) | module loading, that is what stands behind `require` |
+| [`devfs`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/devfs.lua) | the `/dev` file system, where components appear as files |
+| [`vt100`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/vt100.lua) | the ANSI escape sequences the terminal understands |
+| [`transforms`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/transforms.lua) | range helpers for tables, used while parsing command lines |
 
 <a id="what-already-done-components"></a>
 

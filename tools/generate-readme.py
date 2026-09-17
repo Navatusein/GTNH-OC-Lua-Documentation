@@ -1,4 +1,4 @@
-import io, os, re
+import io, os, re, glob
 
 PROJ = r"D:\Projects\GTNH-OC-Lua-Documentation"
 COMP = os.path.join(PROJ, "lua", "components")
@@ -245,7 +245,70 @@ for key, title in GROUPS:
         target = turret_abstract if t.startswith("tier") else files[t]
         lines.append("| [`%s`](%s%s) | %s |" % (t, BASE, target, INFO[t][1]))
 
+# --- libraries --------------------------------------------------------------
+LIB_BASE = "https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/libs/"
+
+LIBS = [
+    ("What a script reaches for", [
+        ("component", "the components attached to this machine"),
+        ("computer", "the machine itself: energy, uptime, signals, shutdown"),
+        ("event", "waiting for and reacting to signals"),
+        ("filesystem", "files and directories, mounts and paths"),
+        ("io", "opening files and the standard streams"),
+        ("term", "reading and writing on the terminal"),
+        ("text", "trimming, padding, wrapping and tokenizing strings"),
+        ("unicode", "string functions that count characters, not bytes"),
+        ("serialization", "turning tables into text and back"),
+        ("os", "time, environment variables, sleeping, running commands"),
+        ("shell", "the working directory, aliases, resolving and running programs"),
+        ("internet", "HTTP requests and TCP sockets"),
+        ("thread", "running several things at once"),
+        ("keyboard", "key codes and which keys are held down"),
+        ("colors", "the sixteen dye colours by name"),
+        ("sides", "the six sides by name, and their opposites"),
+        ("note", "note block pitches by name and frequency"),
+        ("uuid", "generating a random address"),
+        ("robot", "moving, turning and interacting, for a robot"),
+        ("bit32", "bitwise operations on 32 bit integers"),
+        ("nbt", "reading the NBT trees of a Data Card as plain tables"),
+        ("buffer", "the buffered stream that `io.open` returns"),
+    ]),
+    ("Lower level, mostly used by the system", [
+        ("tty", "the terminal device `term` is built on and inherits from"),
+        ("process", "the process table, environments and handles"),
+        ("package", "module loading, that is what stands behind `require`"),
+        ("devfs", "the `/dev` file system, where components appear as files"),
+        ("vt100", "the ANSI escape sequences the terminal understands"),
+        ("transforms", "range helpers for tables, used while parsing command lines"),
+    ]),
+]
+
+lib_lines = []
+for title, members in LIBS:
+    lib_lines.append("")
+    lib_lines.append("#### " + title)
+    lib_lines.append("")
+    lib_lines.append("| Library | What it is for |")
+    lib_lines.append("| --- | --- |")
+    for name, what in members:
+        lib_lines.append("| [`%s`](%s%s.lua) | %s |" % (name, LIB_BASE, name, what))
+
+on_disk = {os.path.basename(p)[:-4] for p in glob.glob(os.path.join(PROJ, "lua", "libs", "*.lua"))}
+listed = {n for _, members in LIBS for n, _ in members}
+if on_disk - listed:
+    raise SystemExit("library not listed: " + ", ".join(sorted(on_disk - listed)))
+if listed - on_disk:
+    raise SystemExit("library has no file: " + ", ".join(sorted(listed - on_disk)))
+
 readme = io.open(os.path.join(PROJ, "README.md"), encoding="utf-8").read()
+lib_marker = "At the moment documentation has been written for the following libraries:"
+lib_start = readme.index(lib_marker)
+lib_end = readme.index('<a id="what-already-done-components"></a>')
+readme = (readme[:lib_start]
+          + "Documentation is ready for these %d libraries.\n" % len(listed)
+          + "\n".join(lib_lines) + "\n\n"
+          + readme[lib_end:])
+
 marker = '<a id="what-already-done-components"></a>'
 start = readme.index(marker) + len(marker) + 1
 head = readme[:start] + chr(10)

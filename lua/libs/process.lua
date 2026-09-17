@@ -22,7 +22,6 @@ function process.info(levelOrThread) end
 ---@return string, table, string # The process path, environment table, and process name.
 function process.running(level) end
 
-
 ---Finds the process a coroutine belongs to.
 ---@param co? thread # The coroutine to look up. Defaults to the running one.
 ---@return table|nil # The process, or `nil` if the coroutine belongs to none.

@@ -128,7 +128,6 @@ function filesystem.copy(fromPath, toPath) end
 ---@return File|nil, string # A file stream on success, otherwise nil and an error message.
 function filesystem.open(path, mode) end
 
-
 ---Resolves a path to the real path inside the file system it lives on, following
 ---links and mount points.
 ---@param path string # The path to resolve.
