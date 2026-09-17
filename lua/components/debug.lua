@@ -34,10 +34,6 @@ function debug.getWorld(id) end
 ---@return table # A table of world IDs.
 function debug.getWorlds() end
 
----Gets the scoreboard object for the world.
----@return Scoreboard # The scoreboard object.
-function debug.getScoreboard() end
-
 ---Gets the X coordinate of the debug card's container.
 ---@return number # The X coordinate.
 function debug.getX() end

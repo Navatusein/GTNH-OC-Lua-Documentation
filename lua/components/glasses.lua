@@ -71,3 +71,15 @@ function glasses.addQuad3D() end
 ---Adds a new quad widget to the surface.
 ---@return Quad2D # The new quad Widget.
 function glasses.addQuad() end
+
+---Sends a message to the chat as the given player.
+---@param playerName string # The name of the player to send the message as.
+---@param message string # The message to send.
+---@return boolean, string|nil # True on success, or false and an error message on failure.
+function glasses.sendChatAs(playerName, message) end
+
+---Sends a private message to the given player.
+---@param playerName string # The name of the player to send the message to.
+---@param message string # The message to send.
+---@return boolean, string|nil # True on success, or false and an error message on failure.
+function glasses.sendMessageTo(playerName, message) end

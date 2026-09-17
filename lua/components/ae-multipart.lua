@@ -1,23 +1,10 @@
 ---@meta _
 
----@class aemultipart: BaseComponent 
+---An AE2 cable bus, seen through an adapter.
+---
+---The name is derived from the block, not declared by any driver, and everything it
+---carries comes from the RF energy handler that matches AE2 cable bus parts.
+---@class aemultipart: BaseEnergyHandler
 ---@field type "aemultipart"
-local aemultipart = {}
 
----Returns the amount of stored energy for the given side.
----@param direction? integer # The side to check, defaults to 6
----@return number # how much energy is stored on that side.
-function aemultipart.getEnergyStored(direction) end
-
----Returns the maximum amount of stored energy for the given side.
----@param direction? integer # The side to check, defaults to 6
----@return number # how much energy is stored on that side.
-function aemultipart.getMaxEnergyStored(direction) end
-
----Returns whether this component can receive energy.
----@return boolean # True if the block can receive energy
-function aemultipart.isEnergyReceiver()	end
-
----Returns whether this component can provide energy.
----@return boolean # True if the block can provide energy.
-function aemultipart.isEnergyProvider() end
+-- Empty on purpose, every method comes from BaseEnergyHandler.

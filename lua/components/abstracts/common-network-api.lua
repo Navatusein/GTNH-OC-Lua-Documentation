@@ -12,13 +12,36 @@ function CommonNetworkAPI.allItems() end
 ---@return MEItemStack[]
 function CommonNetworkAPI.getItemsInNetwork(filter) end
 
+---Get a list of the stored items in the network matching the filter.
+---@param filter integer[] # An array of item IDs.
+---@return MEItemStack[]
+function CommonNetworkAPI.getItemsInNetworkById(filter) end
+
+---Retrieves the stored item in the network by its unlocalized name.
+---@param name string|integer # The unlocalized name or the id of the item.
+---@param damage? integer # The metadata of the item.
+---@param nbt? string # An SNBT string describing the tag of the item.
+---@return MEItemStack
+function CommonNetworkAPI.getItemInNetwork(name, damage, nbt) end
+
+---Retrieves the stored item in the network by a descriptor table.
+---@param detail MEItemStackFilter # A table describing the item to look for.
+---@return MEItemStack
+function CommonNetworkAPI.getItemInNetwork(detail) end
+
 ---Get a list of the stored fluids in the network.
 ---@return MEFluidStack[]
 function CommonNetworkAPI.getFluidsInNetwork() end
 
----Get a list of the stored essentia in the network.
----@return EssentiaStack[]
-function CommonNetworkAPI.getEssentiaInNetwork() end
+---Get the stored fluids in the network, optionally narrowed down to one fluid.
+---@param name? string # The name of the fluid to look for.
+---@return MEFluidStack[]
+function CommonNetworkAPI.getFluidInNetwork(name) end
+
+---Get the stored fluid in the network described by a descriptor table.
+---@param detail table # A table describing the fluid to look for.
+---@return MEFluidStack[]
+function CommonNetworkAPI.getFluidInNetwork(detail) end
 
 ---Store items in the network matching the specified filter in the database with the specified address.
 ---@param filter MEItemStackFilter # A filter of items to look for.
@@ -36,6 +59,12 @@ function CommonNetworkAPI.getCpus() end
 ---@param filter? MEItemStackFilter # A filter of items to look for.
 ---@return AECraftable[]
 function CommonNetworkAPI.getCraftables(filter) end
+
+---Get a single known recipe. This can be used to issue a crafting request.
+---@param detail? MEItemStackFilter # A table describing the item to look for.
+---@param type? string # The type of the stack to look for, `"item"` or `"fluid"`.
+---@return AECraftable
+function CommonNetworkAPI.getCraftable(detail, type) end
 
 ---Get the average power injection into the network.
 ---@return number
@@ -56,3 +85,19 @@ function CommonNetworkAPI.getStoredPower() end
 ---Get the idle power usage of the network.
 ---@return number
 function CommonNetworkAPI.getIdlePowerUsage() end
+
+---Enable or disable subscription to the `network_item_changed` event.
+---@param enabled boolean
+function CommonNetworkAPI.setItemEventSubscription(enabled) end
+
+---Returns whether the `network_item_changed` event subscription is currently enabled.
+---@return boolean
+function CommonNetworkAPI.isItemEventSubscription() end
+
+---Enable or disable subscription to the `network_fluid_changed` event.
+---@param enabled boolean
+function CommonNetworkAPI.setFluidEventSubscription(enabled) end
+
+---Returns whether the `network_fluid_changed` event subscription is currently enabled.
+---@return boolean
+function CommonNetworkAPI.isFluidEventSubscription() end

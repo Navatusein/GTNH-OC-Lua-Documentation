@@ -45,10 +45,14 @@ function modem.send(address, port, ...) end
 function modem.broadcast(port, ...) end
 
 ---Gets the current wireless signal strength.
+---
+---**Wireless modem only** - a wired modem has no signal strength.
 ---@return number # The current signal strength (only for wireless modems).
 function modem.getStrength() end
 
 ---Sets the wireless signal strength.
+---
+---**Wireless modem only** - a wired modem has no signal strength.
 ---@param strength number # The desired signal strength.
 ---@return number # The actual signal strength set (capped by modem's maximum).
 function modem.setStrength(strength) end
@@ -63,3 +67,8 @@ function modem.getWakeMessage() end
 ---@param fuzzy boolean|nil # Whether to enable fuzzy matching. Defaults to false.
 ---@return string # The previously set wake-up message.
 function modem.setWakeMessage(message, fuzzy) end
+
+---Randomises the UUID, that is the address, of this modem.
+---
+---**Added by OpenSecurity** - seen on a wired modem, absent from the tablet's wireless modem.
+function modem.generateUUID() end

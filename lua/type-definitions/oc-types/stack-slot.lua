@@ -1,6 +1,10 @@
 ---@meta _
 
+---The iterator userdata returned by `getAllStacks`.
+---
+---Call it to get the next stack, or use the methods below.
 ---@class StackSlot
+---@overload fun(): ItemStack|nil
 local stackSlot = {}
 
 ---Reset the iterator index so that the next call will return the first element.

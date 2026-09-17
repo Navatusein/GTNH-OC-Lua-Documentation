@@ -250,3 +250,7 @@ function gpu.getBufferSize(bufferIndex) end
 ---@param srcY? integer # The y coordinate of the top left corner of the rectangle to copy on the source buffer.
 ---@return boolean success # True on success
 function gpu.bitblt(dst, dstX, dstY, width, height, src, srcX, srcY) end
+
+---Returns the total memory size of the gpu vram. This does not include the screen.
+---@return integer # The total size of the video memory.
+function gpu.totalMemory() end

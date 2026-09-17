@@ -37,13 +37,13 @@ function levelMaintainer.active() end
 ---@return boolean # True if the slot is done crafting
 function levelMaintainer.isDone(slot) end
 
----Enables or disables a specific slot 
----@param slot integer # The slot to change the status of
----@param newStatus boolean # True to enable the slot, false to disable it
----@return true # Always returns true
-function levelMaintainer.isDone(slot, newStatus) end
-
----Enable or disables a specific slot
+---Gets the crafting state of a specific slot
 ---@param slot integer # The slot to get the status of
 ---@return boolean # True if the slot is enabled
 function levelMaintainer.isEnable(slot) end
+
+---Enables or disables a specific slot
+---@param slot integer # The slot to change the status of
+---@param value boolean # True to enable the slot, false to disable it
+---@return boolean # True on success
+function levelMaintainer.setEnable(slot, value) end

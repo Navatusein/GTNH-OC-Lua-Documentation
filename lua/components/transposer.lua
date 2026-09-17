@@ -72,15 +72,6 @@ function transposer.getTankLevel(side, tank) end
 ---@return integer # The number of items transferred.
 function transposer.transferItem(sourceSide, sinkSide, count, sourceSlot, sinkSlot) end
 
----Compare an item in the inventory with one in the database.
----@param side integer # The side of the inventory.
----@param slot integer # The slot number.
----@param dbAddress string # The database address.
----@param dbSlot integer # The database slot.
----@param checkNBT boolean|nil # Whether to check NBT data. Defaults to false.
----@return boolean # True if items match, false otherwise.
-function transposer.compareStackToDatabase(side, slot, dbAddress, dbSlot, checkNBT) end
-
 ---Check if two stacks are equivalent based on shared OreDictionary IDs.
 ---@param side integer # The side of the inventory.
 ---@param slotA integer # The first slot.
@@ -107,19 +98,8 @@ function transposer.getTankCapacity(side, tank) end
 
 ---Get descriptions of all stacks in the inventory on a specific side.
 ---@param side integer # The side of the inventory.
----@return StackSlot # A table of all stacks in the inventory.
+---@return StackSlot # An iterator userdata over the stacks in the inventory.
 function transposer.getAllStacks(side) end
-
----Get all elements in the internal array of stacks.
----@return ItemStack # A table of all elements in the array.
-function transposer.getAll() end
-
----Get the number of elements in the internal array.
----@return integer # The number of elements.
-function transposer.count() end
-
----Reset the iterator for the internal array of stacks.
-function transposer.reset() end
 
 ---Transfer fluid from a tank to a container.
 ---@param tankSide integer # The side of the tank.
@@ -179,3 +159,25 @@ function transposer.getContainerCapacityInSlot(side, slot) end
 ---@param slot integer # The slot number.
 ---@return integer # The fluid level in the container.
 function transposer.getContainerLevelInSlot(side, slot) end
+
+---Get whether the items in the two specified slots of the inventory on the specified side are of the same type.
+---@param side integer # The side of the inventory.
+---@param slotA integer # The first slot.
+---@param slotB integer # The second slot.
+---@param checkNBT? boolean # Whether to compare NBT data as well. Defaults to false.
+---@return boolean # True if both slots hold the same type of item.
+function transposer.compareStacks(side, slotA, slotB, checkNBT) end
+
+---Swap two inventory slots if and only if both directions succeed.
+---Safe swaps require two non-empty slots.
+---@param sourceSide integer # The side to swap from.
+---@param sinkSide integer # The side to swap to.
+---@param sourceSlot integer # The slot on the source side.
+---@param sinkSlot integer # The slot on the sink side.
+---@param safe? boolean # Whether to require both slots to be non-empty.
+---@return boolean # True if the swap happened.
+function transposer.swap(sourceSide, sinkSide, sourceSlot, sinkSlot, safe) end
+
+---Returns the fluid transfer rate of this transposer.
+---@return number # The transfer rate in liters per second.
+function transposer.getFluidTransferRate() end

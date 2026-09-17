@@ -1,7 +1,8 @@
 ---@meta _
 
----@class me_controller: CommonNetworkAPI, aemultipart
+---@class me_controller: CommonNetworkAPI, EssentiaNetworkAPI, aemultipart
 ---@field type "me_controller"
 local meController = {}
 
--- empty on purpose, it's just a mash of the CommonNetworkAPI and aemultipart types
+-- Empty on purpose, it's just a mash of the CommonNetworkAPI, EssentiaNetworkAPI
+-- and aemultipart types.

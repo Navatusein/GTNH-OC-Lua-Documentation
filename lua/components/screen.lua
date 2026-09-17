@@ -39,10 +39,14 @@ function screen.setPrecise(enabled) end
 function screen.isPrecise() end
 
 --- Sets Inverted Touch mode (Sneak-activate opens GUI if set to true).
+---
+---**Screen block only** - the built-in screens of a robot and a tablet have no touch mode.
 ---@param enabled boolean # Whether to enable or disable inverted touch mode.
 ---@return boolean success # True if the mode changed.
 function screen.setTouchModeInverted(enabled) end
 
 ---Check to see if Inverted Touch mode is enabled (Sneak-activate opens GUI is set to true).
+---
+---**Screen block only** - the built-in screens of a robot and a tablet have no touch mode.
 ---@return boolean isInverted # True if inverted touch mode is enabled.
 function screen.isTouchModeInverted() end
