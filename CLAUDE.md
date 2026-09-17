@@ -158,6 +158,37 @@ writing or changing a signature.
 
 ## Conventions
 
+### Libraries
+
+- A library file is named after the library, is headed `---@meta "<name>"`, and **ends with
+  `return <name>`** — `event.lua` ends with `return event`, `tty.lua` with `return tty`. That
+  last line is what makes `local event = require("event")` resolve, so when adding a function
+  keep it below the existing code, never after the return.
+  ```lua
+  ---@meta "event"
+
+  ---@class EventLibrary
+  local event = {}
+
+  ---Description of what it does.
+  ---@param name string # What it is.
+  ---@return boolean
+  function event.listen(name) end
+
+  return event
+  ```
+- Libraries live in `lua/libs/`. Most come from OpenOS, under
+  `assets/opencomputers/loot/openos/lib/` in the mod, and a few (`component`, `computer`, `os`,
+  `unicode`, part of `robot`) are provided by the machine sandbox instead. Only names bound on
+  the library table itself are public API — methods of the objects a library returns belong in
+  `lua/type-definitions/` (`ThreadHandle`, `File`, `TtyWindow`).
+- Watch for a library that inherits from another: `term` is
+  `setmetatable({internal={}}, {__index=tty})`, so half of what it offers is documented in
+  `tty.lua` and reachable through both names. Check for such a metatable before deciding a
+  documented function does not exist.
+
+### Components
+
 - One component per file, file name in `kebab-case`, class name exactly equal to the component
   type string (`me_exportbus`, not `meExportBus`); the `local` holder may be camelCase.
 - File skeleton:
