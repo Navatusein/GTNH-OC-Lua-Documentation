@@ -1,56 +1,33 @@
 ---@meta _
 
 ---The ME Interface Terminal.
----@class me_interface_terminal: aemultipart
+---@class me_interface_terminal: BaseEnergyHandler
 ---@field type "me_interface_terminal"
 local meInterfaceTerminal = {}
 
----Returns the amount of stored energy for the given side.
----@param direction? number
----@return number
-function meInterfaceTerminal.getEnergyStored(direction) end
-
----Returns a list of all interface
+---Returns a list of all interfaces reachable from this terminal.
 ---@return table
 function meInterfaceTerminal.getInterfaces() end
 
----Returns a list of interfaces at the specified location. 'side' can be a Forge direction number or name.
----@param location table{x:number
----@param y? number: z:number
----@param dimId? number}
----@param side? number|string
+---Returns a list of interfaces at the specified location.
+---@param location MEInterfaceLocation # Where to look.
+---@param side? number|string # A Forge direction, as a number or as a name.
 ---@return table
-function meInterfaceTerminal.getInterfacesByLocation(location, y, dimId, side) end
+function meInterfaceTerminal.getInterfacesByLocation(location, side) end
 
 ---Returns a list of interfaces with the specified display name.
----@param filter string
+---@param filter string # The display name to look for.
 ---@return table
 function meInterfaceTerminal.getInterfacesByName(filter) end
 
----Returns the maximum amount of stored energy for the given side.
----@param direction? number
----@return number
-function meInterfaceTerminal.getMaxEnergyStored(direction) end
+---Sends a pattern from one interface to another.
+---@param source MEInterfaceSlot # The interface and slot to take the pattern from.
+---@param target? MEInterfaceSlot # The interface to put it in, and optionally the slot.
+---@return boolean # Whether the transfer succeeded.
+---@return number|string # The target slot on success, an error message otherwise.
+function meInterfaceTerminal.send(source, target) end
 
----Returns whether this component can provide energy.
----@return number
-function meInterfaceTerminal.isEnergyProvider() end
-
----Returns whether this component can receive energy.
----@return number
-function meInterfaceTerminal.isEnergyReceiver() end
-
----Sends a pattern from source to target. Returns transfer result and target slot or error message.
----@param source table{location:table
----@param slot number}
----@param target? table{location:table
----@param slot? number}
----@return boolean, number|string
-function meInterfaceTerminal.send(source, slot, target, slot) end
-
----Executes multiple transfers in one batch. Returns an array of results, each containing [success:boolean, slotOrError:any].
----@param tasks table{{source:table
----@param target table}
----@param arg3 any
----@return table
-function meInterfaceTerminal.sendBatch(tasks, target, arg3) end
+---Executes several pattern transfers in one batch.
+---@param tasks MEInterfaceTransfer[] # The transfers to perform.
+---@return table # One result per task, each `{success:boolean, slotOrError:any}`.
+function meInterfaceTerminal.sendBatch(tasks) end

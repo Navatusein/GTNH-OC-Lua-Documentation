@@ -31,7 +31,8 @@ function osEnergyturret.getYaw() end
 function osEnergyturret.isOnTarget() end
 
 ---Returns whether the gun is powered
----@return boolean, number
+---@return boolean
+---@return number
 function osEnergyturret.isPowered() end
 
 ---Returns whether the gun is ready to fire again (cooled down and armed)
@@ -48,8 +49,11 @@ function osEnergyturret.moveTo(yaw, pitch) end
 ---@param pitch number
 function osEnergyturret.moveToRadians(yaw, pitch) end
 
----@field powerOff any # function
+---The mod gives no description for this method.
+function osEnergyturret.powerOff() end
 
----@field powerOn any # function
+---The mod gives no description for this method.
+function osEnergyturret.powerOn() end
 
----@field setArmed any # function
+---The mod gives no description for this method.
+function osEnergyturret.setArmed() end

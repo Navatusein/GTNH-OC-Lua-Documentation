@@ -14,6 +14,7 @@ function gtMachine.getCircuitConfiguration() end
 ---Sets the circuit configuration. Use -1 to remove circuit. Returns true on success.
 ---
 ---**Circuit-configurable machines only** - machines without a configuration slot do not expose it.
----@param config number):boolean or (nil
----@param string any
-function gtMachine.setCircuitConfiguration(config, string) end
+---@param config number
+---@return boolean|nil
+---@return nil|string
+function gtMachine.setCircuitConfiguration(config) end

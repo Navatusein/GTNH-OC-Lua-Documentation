@@ -5,9 +5,10 @@
 ---@field type "os_biometric"
 local osBiometric = {}
 
----@field greet any # function
+---The mod gives no description for this method.
+function osBiometric.greet() end
 
 ---Sets the name of the event that gets sent
----@param String name
+---@param name string
 ---@return boolean
-function osBiometric.setEventName(String) end
+function osBiometric.setEventName(name) end

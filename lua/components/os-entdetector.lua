@@ -5,16 +5,18 @@
 ---@field type "os_entdetector"
 local osEntdetector = {}
 
----@field getLoc any # function
+---The mod gives no description for this method.
+function osEntdetector.getLoc() end
 
----@field greet any # function
+---The mod gives no description for this method.
+function osEntdetector.greet() end
 
 ---pushes a signal "entityDetect" for each entity in range (excluding players), optional set range.
----@param optional int:range
+---@param range? integer
 ---@return table
-function osEntdetector.scanEntities(optional) end
+function osEntdetector.scanEntities(range) end
 
 ---pushes a signal "entityDetect" for each player in range, optional set range.
----@param optional int:range
+---@param range? integer
 ---@return table
-function osEntdetector.scanPlayers(optional) end
+function osEntdetector.scanPlayers(range) end

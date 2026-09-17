@@ -26,6 +26,7 @@ lua/type-definitions/ic2-types/   2 files — IC2 userdata (CropNBT, ReactorComp
 lua/type-definitions/ar-glasses/ 27 files — OpenGlasses widgets and interfaces
 tools/dumper.lua                 the in-game dumper that produces dumps/
 tools/generate-readme.py         regenerates the component tables in README.md
+tools/dump-to-stub.py            renders a dump into an annotated component stub
 dumps/computer|robot|tablet/    177 files — in-game proxy dumps, one per component per host
 docs/                            README screenshots only
 ```
@@ -98,7 +99,11 @@ writing or changing a signature.
    mixes in, and in every subclass of it** (e.g. `redstone` lives in `RedstoneSignaller` but its
    methods come from `RedstoneVanilla` / `RedstoneBundled` / `RedstoneWireless`).
 3. The `doc = "function(...):type -- description"` string on `@Callback` is the authoritative
-   signature and description — translate it, don't invent one.
+   signature and description — translate it, don't invent one. Mods are inconsistent about the
+   shape of that string: OpenSecurity writes `type: name` with the two reversed and prefixes
+   optional arguments with `optional:`, GregTech returns `boolean or (nil, string)`, Thaumic
+   Energistics spells alternatives `aspect:string OR detail:table`, and some callbacks carry no
+   signature at all. `tools/dump-to-stub.py` knows these shapes; still read what it produced.
 4. **Methods declared in a class extending `AbstractValue` are NOT component methods.** They
    belong to a userdata object returned by some callback and must be documented as a separate
    `---@class` under `lua/type-definitions/`, never merged into the component.

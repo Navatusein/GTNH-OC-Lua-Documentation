@@ -11,4 +11,9 @@ local essentiaImportbus = {}
 ---@return string
 function essentiaImportbus.getImportConfiguration(side, slot) end
 
----@field setImportConfiguration any # function(side:number[, slot:number][, aspect:string OR detail:table]):boolean -- Configure the import bus pointing in the specified direction to import essentia matching the specified type.
+---Configure the import bus pointing in the specified direction to import essentia matching the specified type.
+---@param side? number
+---@param slot? number
+---@param aspect? string|table
+---@return boolean
+function essentiaImportbus.setImportConfiguration(side, slot, aspect) end

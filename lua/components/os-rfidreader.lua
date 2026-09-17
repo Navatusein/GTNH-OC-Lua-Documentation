@@ -5,9 +5,10 @@
 ---@field type "os_rfidreader"
 local osRfidreader = {}
 
----@field greet any # function
+---The mod gives no description for this method.
+function osRfidreader.greet() end
 
 ---pushes a signal "rfidData" for each found rfid on all players in range, optional set range.
----@param optional int:range
+---@param range? integer
 ---@return string
-function osRfidreader.scan(optional) end
+function osRfidreader.scan(range) end

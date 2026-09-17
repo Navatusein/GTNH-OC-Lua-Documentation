@@ -13,20 +13,21 @@ function osAlarm.activate() end
 ---@return string
 function osAlarm.deactivate() end
 
----@field greet any # function
+---The mod gives no description for this method.
+function osAlarm.greet() end
 
 ---Returns a table of Alarm Sounds
 ---@return table
 function osAlarm.listSounds() end
 
 ---Plays sound at x y z
----@param int x
----@param int y
----@param int z
----@param string sound
----@param float range(1-10 recommended)
+---@param x integer
+---@param y integer
+---@param z integer
+---@param sound string
+---@param range number
 ---@return string
-function osAlarm.playSoundAt(int, int, int, string, float) end
+function osAlarm.playSoundAt(x, y, z, sound, range) end
 
 ---Sets the alarm sound
 ---@param soundName string

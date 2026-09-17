@@ -41,7 +41,8 @@ function osDatablock.encode64(data) end
 ---@return number
 function osDatablock.getLimit() end
 
----@field greet any # function
+---The mod gives no description for this method.
+function osDatablock.greet() end
 
 ---Applies inflate decompression to the data.
 ---@param data string

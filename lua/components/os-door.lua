@@ -5,16 +5,23 @@
 ---@field type "os_door"
 local osDoor = {}
 
----@field close any # function
+---The mod gives no description for this method.
+function osDoor.close() end
 
----@field greet any # function
+---The mod gives no description for this method.
+function osDoor.greet() end
 
----@field isOpen any # function
+---The mod gives no description for this method.
+function osDoor.isOpen() end
 
----@field open any # function
+---The mod gives no description for this method.
+function osDoor.open() end
 
----@field removePassword any # function
+---The mod gives no description for this method.
+function osDoor.removePassword() end
 
----@field setPassword any # function
+---The mod gives no description for this method.
+function osDoor.setPassword() end
 
----@field toggle any # function
+---The mod gives no description for this method.
+function osDoor.toggle() end

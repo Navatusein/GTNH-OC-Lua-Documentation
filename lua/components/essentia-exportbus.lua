@@ -16,7 +16,12 @@ function essentiaExportbus.getExportConfiguration(side, slot) end
 ---@return boolean
 function essentiaExportbus.getVoidAllowed(side) end
 
----@field setExportConfiguration any # function(side:number[, slot:number][, aspect:string OR detail:table]):boolean -- Configure the export bus pointing in the specified direction to export essentia matching the specified type.
+---Configure the export bus pointing in the specified direction to export essentia matching the specified type.
+---@param side? number
+---@param slot? number
+---@param aspect? string|table
+---@return boolean
+function essentiaExportbus.setExportConfiguration(side, slot, aspect) end
 
 ---Set void mode
 ---@param side number
