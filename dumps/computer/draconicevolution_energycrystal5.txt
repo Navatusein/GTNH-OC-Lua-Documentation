@@ -1,0 +1,9 @@
+{
+  ["address"] = "ba3a7bc4-7cc5-4a90-81f3-50670e738b26",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["slot"] = "-1",
+  ["type"] = "draconicevolution_energycrystal5",
+}

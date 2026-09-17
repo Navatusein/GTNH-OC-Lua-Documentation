@@ -1,0 +1,13 @@
+{
+  ["address"] = "a8d86dca-7534-40a3-975f-a76c12f49ee7",
+  ["getFlow"] = "function",
+  ["getOverrideEnabled"] = "function",
+  ["getSignalHighFlow"] = "function",
+  ["getSignalLowFlow"] = "function",
+  ["setFlowOverride"] = "function",
+  ["setOverrideEnabled"] = "function",
+  ["setSignalHighFlow"] = "function",
+  ["setSignalLowFlow"] = "function",
+  ["slot"] = "-1",
+  ["type"] = "fluid_gate",
+}

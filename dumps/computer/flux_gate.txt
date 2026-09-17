@@ -1,0 +1,17 @@
+{
+  ["address"] = "cb2a4019-2319-4a2e-878b-5e5b2fd2a0de",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getFlow"] = "function",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["getOverrideEnabled"] = "function",
+  ["getSignalHighFlow"] = "function",
+  ["getSignalLowFlow"] = "function",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["setFlowOverride"] = "function",
+  ["setOverrideEnabled"] = "function",
+  ["setSignalHighFlow"] = "function",
+  ["setSignalLowFlow"] = "function",
+  ["slot"] = "-1",
+  ["type"] = "flux_gate",
+}

@@ -1,0 +1,8 @@
+{
+  ["address"] = "20090df2-6a9f-48eb-9d7c-f91c4a08e22a",
+  ["getGeneratorState"] = "function",
+  ["resetGeneratorState"] = "function",
+  ["setGeneratorProperty"] = "function",
+  ["slot"] = "-1",
+  ["type"] = "particle_generator",
+}

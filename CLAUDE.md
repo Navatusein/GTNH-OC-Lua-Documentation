@@ -146,7 +146,10 @@ writing or changing a signature.
    names with no signature, so parameters and return values have to be read out of
    `callMethod` by hand. Watch for the peripheral living on a different block than the one
    it controls — `draconic_reactor` answers on the Energy Injector and the Stabilizer, and
-   both forward to the reactor core.
+   both forward to the reactor core. The dumps also showed the RF energy handler merged into
+   these: `draconic_reactor` and `flux_gate` carry it, and the energy reported is that of the
+   host block, not of the reactor. `fluid_gate` has no dump yet and implements `IFluidHandler`
+   rather than the RF interfaces, so expect a different set and possibly a different name.
 8. **An in-game dump beats source reading.** When the user provides output of
    `component.methods` / a proxy dump for a real block, that is the authoritative method set —
    it already accounts for compounding, subclassing and which mods are actually loaded. Use the

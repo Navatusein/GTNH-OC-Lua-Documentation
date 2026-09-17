@@ -4,8 +4,9 @@
 ---
 ---The component sits on the Energy Injector and the Stabilizer, not on the core itself,
 ---and both forward every call to the core they belong to. None of these methods take
----arguments; passing one raises an error.
----@class draconic_reactor: BaseComponent
+---arguments; passing one raises an error. Both hosts are RF blocks, so the energy
+---handler methods are there too and report that host, not the reactor.
+---@class draconic_reactor: BaseEnergyHandler
 ---@field type "draconic_reactor"
 local draconicReactor = {}
 

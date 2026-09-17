@@ -1,0 +1,9 @@
+{
+  ["address"] = "1d13476c-de38-45d8-a977-d01b340449a3",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["slot"] = "-1",
+  ["type"] = "draconic_chest",
+}

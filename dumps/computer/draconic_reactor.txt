@@ -1,0 +1,13 @@
+{
+  ["activateReactor"] = "function",
+  ["address"] = "1fb678d3-c1a3-4e5a-8809-ebe513e4a447",
+  ["chargeReactor"] = "function",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["getReactorInfo"] = "function",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["slot"] = "-1",
+  ["stopReactor"] = "function",
+  ["type"] = "draconic_reactor",
+}

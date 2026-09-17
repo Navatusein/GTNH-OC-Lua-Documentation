@@ -85,12 +85,12 @@ At the moment documentation has been written for the following libraries:
 
 <a id="what-already-done-components"></a>
 
-Documentation is ready for the following 156 components, grouped by the mod that
+Documentation is ready for the following 165 components, grouped by the mod that
 provides them. Some names look odd — `caninv`, `blockjar_0`, `tile_for_apiculture_0_name` —
 because OpenComputers derives a component name from the block itself whenever no driver
 declares one. Those are the names the game really answers to.
 
-[OpenComputers — cards](#opencomputers--cards) (13) · [OpenComputers — upgrades](#opencomputers--upgrades) (18) · [OpenComputers — blocks and machines](#opencomputers--blocks-and-machines) (14) · [Applied Energistics 2](#applied-energistics-2) (10) · [AE2 Fluid Craft Rework](#ae2-fluid-craft-rework) (6) · [Thaumic Energistics](#thaumic-energistics) (4) · [GregTech](#gregtech) (6) · [Computronics](#computronics) (16) · [OpenSecurity](#opensecurity) (10) · [Forestry and Magic Bees](#forestry-and-magic-bees) (13) · [Thaumcraft](#thaumcraft) (6) · [IndustrialCraft 2](#industrialcraft-2) (3) · [Railcraft](#railcraft) (5) · [Open Modular Turrets](#open-modular-turrets) (10) · [Draconic Evolution](#draconic-evolution) (6) · [Other mods](#other-mods) (10) · [Vanilla blocks, through an adapter](#vanilla-blocks-through-an-adapter) (6)
+[OpenComputers — cards](#opencomputers--cards) (13) · [OpenComputers — upgrades](#opencomputers--upgrades) (18) · [OpenComputers — blocks and machines](#opencomputers--blocks-and-machines) (14) · [Applied Energistics 2](#applied-energistics-2) (10) · [AE2 Fluid Craft Rework](#ae2-fluid-craft-rework) (6) · [Thaumic Energistics](#thaumic-energistics) (4) · [GregTech](#gregtech) (6) · [Computronics](#computronics) (16) · [OpenSecurity](#opensecurity) (10) · [Forestry and Magic Bees](#forestry-and-magic-bees) (13) · [Thaumcraft](#thaumcraft) (6) · [IndustrialCraft 2](#industrialcraft-2) (3) · [Railcraft](#railcraft) (5) · [Open Modular Turrets](#open-modular-turrets) (10) · [Draconic Evolution](#draconic-evolution) (15) · [Other mods](#other-mods) (10) · [Vanilla blocks, through an adapter](#vanilla-blocks-through-an-adapter) (6)
 
 #### OpenComputers — cards
 
@@ -300,9 +300,18 @@ declares one. Those are the names the game really answers to.
 
 | Component | What it is |
 | --- | --- |
+| [`draconic_chest`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconic-chest.lua) | Draconic Chest, only its RF energy methods |
 | [`draconic_reactor`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconic-reactor.lua) | reactor, through an Energy Injector or a Stabilizer |
 | [`draconic_rf_storage`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconic-rf-storage.lua) | Energy Pylon of an energy core |
+| [`draconicevolution_energycrystal0`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconicevolution-energycrystal-0.lua) | energy core crystal, variant 0 |
+| [`draconicevolution_energycrystal1`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconicevolution-energycrystal-1.lua) | energy core crystal, variant 1 |
+| [`draconicevolution_energycrystal2`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconicevolution-energycrystal-2.lua) | energy core crystal, variant 2 |
+| [`draconicevolution_energycrystal3`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconicevolution-energycrystal-3.lua) | energy core crystal, variant 3 |
+| [`draconicevolution_energycrystal4`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconicevolution-energycrystal-4.lua) | energy core crystal, variant 4 |
+| [`draconicevolution_energycrystal5`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconicevolution-energycrystal-5.lua) | energy core crystal, variant 5 |
+| [`draconicevolution_energyinfuser`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconicevolution-energyinfuser.lua) | Energy Infuser, only its RF energy methods |
 | [`draconicevolution_generator`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconicevolution-generator.lua) | a generator, only its RF energy methods |
+| [`draconicevolution_grinder`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconicevolution-grinder.lua) | Mob Grinder, only its RF energy methods |
 | [`fluid_gate`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/fluid-gate.lua) | Fluid Gate, a fluid transfer limiter |
 | [`flux_gate`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/flux-gate.lua) | Flux Gate, an RF transfer limiter |
 | [`particle_generator`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/particle-generator.lua) | Particle Generator |
