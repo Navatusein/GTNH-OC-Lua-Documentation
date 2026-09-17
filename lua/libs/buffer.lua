@@ -49,3 +49,5 @@ function buffer:lines(...) end
 ---@param stream table # The underlying stream to buffer.
 ---@return BufferLibrary # The new buffered stream.
 function buffer.new(mode, stream) end
+
+return buffer

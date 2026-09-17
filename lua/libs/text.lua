@@ -45,4 +45,25 @@ function text.wrappedLines(value, width, maxWidth) end
 ---@return table # A table of tokens (words).
 function text.tokenize(value) end
 
+
+---Escapes the Lua pattern magic characters in a string, so that it can be used as a
+---literal inside a pattern.
+---@param txt string # The text to escape.
+---@return string
+function text.escapeMagic(txt) end
+
+---Removes the escaping added by `text.escapeMagic`.
+---@param txt string # The escaped text.
+---@return string
+function text.removeEscapes(txt) end
+
+---Splits a string on any of the given delimiters, keeping the delimiters themselves
+---as elements unless told to drop them.
+---@param input string # The text to split.
+---@param delimiters string[] # The patterns to split on.
+---@param dropDelims? boolean # Whether to leave the delimiters out of the result.
+---@param di? integer # Index of the delimiter to start with.
+---@return string[]
+function text.split(input, delimiters, dropDelims, di) end
+
 return text

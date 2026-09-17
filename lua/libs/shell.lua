@@ -51,4 +51,15 @@ function shell.execute(command, env, ...) end
 ---@return table, table # Two tables: the first with normal parameters, the second with options.
 function shell.parse(...) end
 
+
+---Returns the shell program set in the `SHELL` environment variable, loaded and ready
+---to run. Defaults to `/bin/sh`.
+---@return function|nil # The shell program, or `nil` and an error message.
+---@return string|nil
+function shell.getShell() end
+
+---Gives the current process its own copy of the aliases and variables it inherited,
+---so that changing them no longer affects the parent process.
+function shell.prime() end
+
 return shell

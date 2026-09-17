@@ -74,4 +74,13 @@ function term.screen() end
 ---@return string # The keyboard address.
 function term.keyboard() end
 
+
+---Returns the area of the screen the current window occupies, in global screen
+---coordinates, as x, y, width and height.
+---@return integer x
+---@return integer y
+---@return integer width
+---@return integer height
+function term.getGlobalArea() end
+
 return term

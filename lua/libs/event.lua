@@ -60,4 +60,14 @@ function event.onError(message) end
 ---@vararg any # Additional arguments to pass with the event.
 function event.push(name, ...) end
 
+
+---Registers a raw event handler. `event.listen` and `event.timer` are built on this,
+---and are usually what a program wants instead.
+---@param key string|nil # The signal name to react to, or `nil` for any signal.
+---@param callback function # Called with the signal name and its arguments.
+---@param interval? number # Seconds between calls. Defaults to never repeating.
+---@param times? integer # How many times to call it. Defaults to once.
+---@return integer # The handler id, which `event.cancel` accepts.
+function event.register(key, callback, interval, times) end
+
 return event

@@ -623,4 +623,14 @@ function robot.fillUp(count) end
 ---@return boolean
 function robot.fillDown(count) end
 
+
+---Gets the color of the activity light as an integer encoded RGB value, `0xRRGGBB`.
+---@return integer
+function robot.getLightColor() end
+
+---Sets the color of the activity light to an integer encoded RGB value, `0xRRGGBB`.
+---@param value integer # The new color.
+---@return integer # The previous color.
+function robot.setLightColor(value) end
+
 return robot
