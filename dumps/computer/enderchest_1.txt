@@ -1,0 +1,8 @@
+{
+  ["address"] = "fed319f2-103e-4705-ab2a-9003dbc36e15",
+  ["getFrequency"] = "function():number -- Get the currently set frequency.",
+  ["getOwner"] = "function():string -- Get the name of the owner, which is usually a player's name or 'global'.",
+  ["setFrequency"] = "function(value:number) -- Set the frequency. Who would have thought?!",
+  ["slot"] = "-1",
+  ["type"] = "enderchest_1",
+}

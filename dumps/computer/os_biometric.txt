@@ -1,0 +1,7 @@
+{
+  ["address"] = "51a77480-d7c9-4961-83ec-7c60b98b77e1",
+  ["greet"] = "function",
+  ["setEventName"] = "function(String:name):boolean; Sets the name of the event that gets sent",
+  ["slot"] = "-1",
+  ["type"] = "os_biometric",
+}

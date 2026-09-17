@@ -1,0 +1,6 @@
+{
+  ["address"] = "185bc9ae-11ed-467a-a6d4-9ed056169d6e",
+  ["distance"] = "function([x:number, y:number]):number; Returns the distance to the block the ray is shot at with the specified x-y offset, or of the block directly in front",
+  ["slot"] = "-1",
+  ["type"] = "camera",
+}

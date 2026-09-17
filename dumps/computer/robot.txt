@@ -1,0 +1,10 @@
+{
+  ["address"] = "3acb0860-92cd-4228-b999-3d1acf79d770",
+  ["getName"] = "function():string -- Returns the robot name.",
+  ["isRunning"] = "function():boolean -- Returns whether the robot is running.",
+  ["setName"] = "function(name: string):string -- Sets a new name and returns the old name. Robot must not be running",
+  ["slot"] = "-1",
+  ["start"] = "function():boolean -- Starts the robot. Returns true if the state changed.",
+  ["stop"] = "function():boolean -- Stops the robot. Returns true if the state changed.",
+  ["type"] = "robot",
+}

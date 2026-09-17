@@ -1,0 +1,10 @@
+{
+  ["address"] = "cb4b8599-f5a2-4373-8c0e-0416a46a4422",
+  ["getCharge"] = "function():number; gets the current charge of the locomotive",
+  ["getDestination"] = "function():string; gets the destination the locomotive is currently set to",
+  ["getMode"] = "function():string; returns the current mode of the locomotive; can be 'running', 'idle' or 'shutdown'",
+  ["getName"] = "function():string; returns the current name of the locomotive",
+  ["setDestination"] = "function(destination:string):boolean; Sets the locomotive's destination; there needs to be a golden ticket inside the locomotive",
+  ["slot"] = "-1",
+  ["type"] = "locomotive_relay",
+}

@@ -1,0 +1,14 @@
+{
+  ["address"] = "54063542-4fab-4fba-803e-dfac4d457d82",
+  ["getDestination"] = "function([slot:number]):string; Returns the destination of the currently selected or the specified ticket",
+  ["getSelectedTicket"] = "function():number; Returns the index of the currently selected ticket",
+  ["isManualPrintingAllowed"] = "function():boolean; Returns true if manual printing is allowed",
+  ["isManualSelectionAllowed"] = "function():boolean; Returns true if manual ticket selection is allowed",
+  ["printTicket"] = "function([amount:number [, slot:number]]):boolean; Tries to print one or more tickets from the current or the specified ticket slot; amount may be nil; Returns true on success",
+  ["setDestination"] = "function([slot:number,] destination:string):string; Tries to set the destination of the currently selected or the specified ticket; Returns the new destination",
+  ["setManualPrintingAllowed"] = "function(allowed:boolean):boolean; permits or prohibits manual printing; Returns true if manual printing is allowed",
+  ["setManualSelectionAllowed"] = "function(allowed:boolean):boolean; permits or prohibits manually selecting a ticket; Returns true if manual ticket selection is allowed",
+  ["setSelectedTicket"] = "function(slot:number):number; Sets the currently selected ticket slot; Returns the new selected slot",
+  ["slot"] = "-1",
+  ["type"] = "ticket_machine",
+}

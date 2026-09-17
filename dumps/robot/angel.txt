@@ -1,0 +1,5 @@
+{
+  ["address"] = "97d6530a-8bc5-426e-b59f-52fcf724abbb",
+  ["slot"] = "1",
+  ["type"] = "angel",
+}

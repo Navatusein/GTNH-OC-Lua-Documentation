@@ -1,0 +1,15 @@
+{
+  ["address"] = "29a4d51a-d8fe-4723-bab6-b00ffa2e9ee0",
+  ["canBreed"] = "function():boolean -- Can the bees breed?",
+  ["getBeeBreedingData"] = "function():table -- Get the full breeding list thingy.",
+  ["getBeeParents"] = "function(beeName:string):table -- Get the parents for a particular mutation",
+  ["getDrone"] = "function():table -- Get the drone",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["getQueen"] = "function():table -- Get the queen",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["listAllSpecies"] = "function():table -- Get all known bees mutations",
+  ["slot"] = "-1",
+  ["type"] = "for_alveary_4",
+}

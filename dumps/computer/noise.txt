@@ -1,0 +1,15 @@
+{
+  ["add"] = "function(channel:number, frequency:number, duration:number [, initialDelay:number]):boolean; Adds the frequency played with the duration to the channel's buffer, optionally with a delay before playing. Returns true on success.",
+  ["address"] = "0bfcf1ba-8e81-401b-b4b3-18cd6defe936",
+  ["channel_count"] = "table: 000001b312639980",
+  ["clear"] = "function(channel:number); Clears the buffer.",
+  ["getActiveChannels"] = "function():number; returns the amount of channels currently in use",
+  ["getMode"] = "function(channel:number):number; returns the current mode of the specified channel",
+  ["isReady"] = "function():boolean; returns true if the card is not already processing a command",
+  ["modes"] = "table: 000001b312637bc0",
+  ["play"] = "function(channels:table):boolean; table must have 8 or fewer entries. Each entry must be a table containing a frequency and a duration as values; plays each frequency for the specified duration. Returns true on success.",
+  ["process"] = "function():boolean; Starts processing the buffer and clears it. Returns true on success.",
+  ["setMode"] = "function(channel:number, mode:number):boolean; Sets the audio mode of the specified channel.",
+  ["slot"] = "2",
+  ["type"] = "noise",
+}

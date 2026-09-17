@@ -1,0 +1,10 @@
+{
+  ["address"] = "001a780e-6ce4-4047-ba80-f40810c9b421",
+  ["getFuel"] = "function():int -- Get the remaining anchor time, in ticks.",
+  ["getFuelSlotContents"] = "function():table -- Get the anchor fuel slot's contents.",
+  ["getOwner"] = "function():string -- Get the anchor owner name.",
+  ["getType"] = "function():string -- Get the anchor type.",
+  ["isDisabled"] = "function():boolean -- If the anchor is disabled (powered by redstone).",
+  ["slot"] = "-1",
+  ["type"] = "anchor",
+}

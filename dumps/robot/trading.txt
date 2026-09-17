@@ -1,0 +1,6 @@
+{
+  ["address"] = "5211bfb9-4357-4d5e-bba2-fc5f26621e07",
+  ["getTrades"] = "function():table -- Returns a table of trades in range as userdata objects.",
+  ["slot"] = "2",
+  ["type"] = "trading",
+}

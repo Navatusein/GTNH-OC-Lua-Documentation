@@ -1,0 +1,9 @@
+{
+  ["address"] = "be276995-7e52-4e37-9a5d-028da31f40ea",
+  ["connect"] = "function(address:string[, port:number]):userdata -- Opens a new TCP connection. Returns the handle of the connection.",
+  ["isHttpEnabled"] = "function():boolean -- Returns whether HTTP requests can be made (config setting).",
+  ["isTcpEnabled"] = "function():boolean -- Returns whether TCP connections can be made (config setting).",
+  ["request"] = "function(url:string[, postData:string[, headers:table[, method:string]]]):userdata -- Starts an HTTP request. If this returns true, further results will be pushed using `http_response` signals.",
+  ["slot"] = "0",
+  ["type"] = "internet",
+}

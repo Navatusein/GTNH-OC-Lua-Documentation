@@ -1,0 +1,6 @@
+{
+  ["address"] = "f4468d0c-3d61-457e-9158-89f86772ee9a",
+  ["getOutputSignal"] = "function():number -- Get the strength of the comparators output signal.",
+  ["slot"] = "-1",
+  ["type"] = "comparator",
+}

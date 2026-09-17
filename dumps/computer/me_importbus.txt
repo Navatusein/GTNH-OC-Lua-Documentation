@@ -1,0 +1,14 @@
+{
+  ["address"] = "b7c7f577-5d38-4ddc-a241-ac86c8939e26",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getImportConfiguration"] = "function(side:number[, slot:number]):boolean -- Get the configuration of the import bus pointing in the specified direction.",
+  ["getImportOreFilter"] = "function(side:number):boolean -- Get the ore filter of the import bus pointing in the specified direction.",
+  ["getImportSlotSize"] = "function(side:number):number -- Get the number of valid slots in this import bus.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["setImportConfiguration"] = "function(side:number[, slot:number][, database:address, entry:number]):boolean OR function(side:number[, slot:number][, detail:table]):boolean -- Configure the import bus pointing in the specified direction to import item stacks matching the specified descriptor.",
+  ["setImportOreFilter"] = "function(side:number, filter: String):boolean -- Set the ore filter of the import bus pointing in the specified direction.",
+  ["slot"] = "-1",
+  ["type"] = "me_importbus",
+}

@@ -1,0 +1,14 @@
+{
+  ["address"] = "06d60fc9-1bba-4667-817a-1be2ad0f05d4",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getInterfaces"] = "function():table -- Returns a list of all interface",
+  ["getInterfacesByLocation"] = "function(location:table{x:number, y:number: z:number[, dimId:number]}[, side:number|string]):table -- Returns a list of interfaces at the specified location. 'side' can be a Forge direction number or name.",
+  ["getInterfacesByName"] = "function(filter:string):table -- Returns a list of interfaces with the specified display name.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["send"] = "function(source:table{location:table, slot:number}, target:table{location:table[, slot:number]}):boolean, number|string -- Sends a pattern from source to target. Returns transfer result and target slot or error message.",
+  ["sendBatch"] = "function(tasks:table{{source:table, target:table}, ...}):table -- Executes multiple transfers in one batch. Returns an array of results, each containing [success:boolean, slotOrError:any].",
+  ["slot"] = "-1",
+  ["type"] = "me_interface_terminal",
+}

@@ -1,0 +1,7 @@
+{
+  ["address"] = "75c5c944-93d9-4c16-819a-58d4fcf0b655",
+  ["getSensitivity"] = "function():number -- Gets the current sensor sensitivity.",
+  ["setSensitivity"] = "function(value:number):number -- Sets the sensor's sensitivity. Returns the old value.",
+  ["slot"] = "-1",
+  ["type"] = "motion_sensor",
+}

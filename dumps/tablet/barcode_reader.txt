@@ -1,0 +1,5 @@
+{
+  ["address"] = "70ffb09c-0a57-4f17-8d9a-7a29643ebed8",
+  ["slot"] = "6",
+  ["type"] = "barcode_reader",
+}

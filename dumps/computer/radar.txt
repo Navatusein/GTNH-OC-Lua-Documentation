@@ -1,0 +1,9 @@
+{
+  ["address"] = "1284549d-780d-40c1-92f8-ecb3cd0df519",
+  ["getEntities"] = "function([distance:number]):table; Returns a list of all entities detected within the specified or the maximum range",
+  ["getItems"] = "function([distance:number]):table; Returns a list of all items detected within the specified or the maximum range",
+  ["getMobs"] = "function([distance:number]):table; Returns a list of all mobs detected within the specified or the maximum range",
+  ["getPlayers"] = "function([distance:number]):table; Returns a list of all players detected within the specified or the maximum range",
+  ["slot"] = "-1",
+  ["type"] = "radar",
+}

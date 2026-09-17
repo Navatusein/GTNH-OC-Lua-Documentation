@@ -1,0 +1,14 @@
+{
+  ["address"] = "ae0e7de2-fc46-4a04-a762-4c1aa585282e",
+  ["getCapacity"] = "function():number -- Returns the total capacity of the drive, in bytes.",
+  ["getLabel"] = "function():string -- Get the current label of the drive.",
+  ["getPlatterCount"] = "function():number -- Returns the number of platters in the drive.",
+  ["getSectorSize"] = "function():number -- Returns the size of a single sector on the drive, in bytes.",
+  ["readByte"] = "function(offset:number):number -- Read a single byte at the specified offset.",
+  ["readSector"] = "function(sector:number):string -- Read the current contents of the specified sector.",
+  ["setLabel"] = "function(value:string):string -- Sets the label of the drive. Returns the new value, which may be truncated.",
+  ["slot"] = "6",
+  ["type"] = "drive",
+  ["writeByte"] = "function(offset:number, value:number) -- Write a single byte to the specified offset.",
+  ["writeSector"] = "function(sector:number, value:string) -- Write the specified contents to the specified sector.",
+}

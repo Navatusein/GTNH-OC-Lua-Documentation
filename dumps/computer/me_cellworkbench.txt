@@ -1,0 +1,17 @@
+{
+  ["address"] = "5d83e25b-e342-41ab-a113-5a2c456b79e0",
+  ["clearPartitions"] = "function():boolean -- Clears every partition slot on the inserted cell.",
+  ["getCell"] = "function():table -- Returns details about the inserted cell item itself. Returns nil if no cell is inserted. Essentia cells return limited info.",
+  ["getCellType"] = "function():string -- Returns the inserted cell's type (\"item\", \"fluid\", \"essentia\", ...). Returns nil if no cell is inserted.",
+  ["getCopyMode"] = "function():string -- Returns the workbench's copy mode: \"clear\" or \"keep\" (whether the partitions are cleared or remains when a cell is removed).",
+  ["getOreFilter"] = "function():string -- Returns the inserted cell's ore filter string. Returns empty string (not nil) if unset.",
+  ["getPartition"] = "function():table -- Returns every partition slot as a table keyed by slot number (1-based). Empty slots are omitted.",
+  ["getRestriction"] = "function():number, number -- Returns the cell's restriction as (types, amount). (0, 0) means unrestricted.",
+  ["hasCell"] = "function():boolean -- Returns whether a storage cell is currently inserted.",
+  ["setCopyMode"] = "function(mode:string):boolean -- Sets the workbench's copy mode: \"clear\" or \"keep\".",
+  ["setOreFilter"] = "function(filter:string):boolean -- Sets the inserted cell's ore filter string.",
+  ["setPartition"] = "function(slot:number[, item:table]):boolean -- Sets the partition in the given slot (1-based). Accepts a table describing the item (e.g. name, damage). Omit the item to clear the slot.",
+  ["setRestriction"] = "function(types:number, amount:number):boolean -- Sets the cell's restriction. (0, 0) means unrestricted.",
+  ["slot"] = "-1",
+  ["type"] = "me_cellworkbench",
+}

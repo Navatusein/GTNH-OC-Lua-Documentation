@@ -1,0 +1,8 @@
+{
+  ["address"] = "25473949-dc7a-49c7-a9ef-dcda609656e6",
+  ["getColor"] = "function():number; Returns the color of the robot.",
+  ["resetColor"] = "function():boolean; Resets the colour of the robot. Returns true on success, false and an error message otherwise",
+  ["setColor"] = "function(color:number):boolean; Sets the color of the robot. Returns true on success, false and an error message otherwise",
+  ["slot"] = "1",
+  ["type"] = "colors",
+}

@@ -1,0 +1,7 @@
+{
+  ["address"] = "1a20a706-ae81-4c69-8304-b66e081d6fec",
+  ["slot"] = "1",
+  ["start"] = "function([time:number]):number; Starts the countdown; Will be ticking down until the time is reached. 5 seconds by default. Returns the time set",
+  ["time"] = "function():number; Returns the time in seconds left",
+  ["type"] = "self_destruct",
+}

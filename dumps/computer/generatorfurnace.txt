@@ -1,0 +1,9 @@
+{
+  ["address"] = "79aeaa78-e42d-4b14-a6ba-151f82e8577b",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["slot"] = "-1",
+  ["type"] = "generatorfurnace",
+}

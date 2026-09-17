@@ -1,0 +1,9 @@
+{
+  ["address"] = "944a99a0-52bf-4cdc-a3ad-496b1e6fe3d3",
+  ["decrypt"] = "function(message:string):string; Decrypts the specified message",
+  ["encrypt"] = "function(message:string):string; Encrypts the specified message",
+  ["isLocked"] = "function():boolean; Returns whether the block is currently locked",
+  ["setLocked"] = "function(locked:boolean); Sets whether the block is currently locked",
+  ["slot"] = "-1",
+  ["type"] = "cipher",
+}

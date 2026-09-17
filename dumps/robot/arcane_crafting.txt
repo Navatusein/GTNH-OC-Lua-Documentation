@@ -1,0 +1,8 @@
+{
+  ["address"] = "450c23f0-c9fd-4751-955e-f09420795dbc",
+  ["craft"] = "function([count:number]):boolean, number, string -- Tries to craft the specified number of items in the top left area of the inventory using both normal and arcane recipes.",
+  ["craftArcane"] = "function([count:number]):boolean, number, string -- Tries to craft the specified number of items in the top left area of the inventory using only Thaumcraft crafting recipes.",
+  ["craftNormal"] = "function([count:number]):boolean, number, string -- Tries to craft the specified number of items in the top left area of the inventory using only vanilla crafting recipes.",
+  ["slot"] = "2",
+  ["type"] = "arcane_crafting",
+}

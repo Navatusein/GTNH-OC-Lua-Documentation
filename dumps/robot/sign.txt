@@ -1,0 +1,7 @@
+{
+  ["address"] = "dff0c1d3-d82f-4ca3-b081-689d78652554",
+  ["getValue"] = "function():string -- Get the text on the sign in front of the host.",
+  ["setValue"] = "function(value:string):string -- Set the text on the sign in front of the host.",
+  ["slot"] = "3",
+  ["type"] = "sign",
+}

@@ -1,0 +1,9 @@
+{
+  ["address"] = "0e39fc02-6535-4d61-9bfe-dd49af209fbd",
+  ["setDisplay"] = "function(String:text[, color:number]):boolean; Sets the display string (0-8 chars), color (0-7) - 1 bit per channel",
+  ["setEventName"] = "function(String:name):boolean; Sets the name of the event that gets sent when a key is pressed",
+  ["setKey"] = "function(idx:number, text:string, color:number):boolean; Sets the key text (1-2 chars)",
+  ["setShouldBeep"] = "function(Boolean):boolean; Sets if the keys should beep when pressed",
+  ["slot"] = "-1",
+  ["type"] = "os_keypad",
+}

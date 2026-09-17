@@ -1,0 +1,6 @@
+{
+  ["address"] = "261543a9-7063-4dc3-8871-7260f428f519",
+  ["slot"] = "1",
+  ["suck"] = "function():boolean -- Tries to pick up a random item in the robots' vicinity.",
+  ["type"] = "tractor_beam",
+}

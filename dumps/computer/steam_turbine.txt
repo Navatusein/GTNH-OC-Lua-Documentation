@@ -1,0 +1,11 @@
+{
+  ["address"] = "bdc17be0-7519-4a97-9a62-aa6861ec342d",
+  ["getCapacity"] = "function():number; Returns the maximum capacity of the electric tile",
+  ["getCharge"] = "function():number; Returns the current charge of the electric tile",
+  ["getDraw"] = "function():number; Returns the draw per tick of the electric tile.",
+  ["getLoss"] = "function():number; Returns the loss per tick of the electric tile.",
+  ["getTurbineOutput"] = "function():number --  Returns the output of the steam turbine",
+  ["getTurbineRotorStatus"] = "function():number -- Returns the durability of the rotor in percent.",
+  ["slot"] = "-1",
+  ["type"] = "steam_turbine",
+}

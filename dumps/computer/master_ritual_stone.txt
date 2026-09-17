@@ -1,0 +1,10 @@
+{
+  ["address"] = "b59cdbb6-03f9-4bb1-addb-6a4af81dc870",
+  ["areTanksEmpty"] = "function():boolean -- Get whether the tanks are empty.",
+  ["getCooldown"] = "function():number -- Get the remaining cooldown.",
+  ["getCurrentRitual"] = "function():string -- Get the current ritual.",
+  ["getOwner"] = "function():string -- Get the name of the player owning this master ritual stone.",
+  ["getRunningTime"] = "function():number -- Get the running time.",
+  ["slot"] = "-1",
+  ["type"] = "master_ritual_stone",
+}

@@ -1,0 +1,18 @@
+{
+  ["address"] = "0d4e20b8-948d-4390-9a6d-0abd8c220dbd",
+  ["extendShaft"] = "function(length:boolean):number -- Extends gun shaft (0-2)",
+  ["fire"] = "function():table -- Fires the gun.  More damage means longer cooldown and more energy draw. Returns true for success and throws error with a message for failure",
+  ["getPitch"] = "function():number -- Current real pitch",
+  ["getShaftLength"] = "function():boolean -- Get gun shaft extension",
+  ["getYaw"] = "function():number -- Current real yaw",
+  ["isOnTarget"] = "function():boolean -- Returns whether the gun has reached the set position",
+  ["isPowered"] = "function():boolean,number -- Returns whether the gun is powered",
+  ["isReady"] = "function():boolean -- Returns whether the gun is ready to fire again (cooled down and armed)",
+  ["moveTo"] = "function(yaw:number, pitch:number) -- Changes the gun's setpoint (Yaw ranges (0.0..360) Pitch ranges (-45..90))",
+  ["moveToRadians"] = "function(yaw:number, pitch:number) -- Changes the gun's setpoint in radians",
+  ["powerOff"] = "function",
+  ["powerOn"] = "function",
+  ["setArmed"] = "function",
+  ["slot"] = "-1",
+  ["type"] = "os_energyturret",
+}

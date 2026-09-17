@@ -1,0 +1,8 @@
+{
+  ["address"] = "da0f3efe-7b08-4ed9-ab09-efd26469b1db",
+  ["getPitch"] = "function():number -- Get the currently set pitch on this note block.",
+  ["setPitch"] = "function(value:number) -- Set the pitch for this note block. Must be in the interval [1, 25].",
+  ["slot"] = "-1",
+  ["trigger"] = "function([pitch:number]):boolean -- Triggers the note block if possible. Allows setting the pitch for to save a tick.",
+  ["type"] = "note_block",
+}

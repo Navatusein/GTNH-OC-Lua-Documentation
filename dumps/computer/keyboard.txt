@@ -1,0 +1,5 @@
+{
+  ["address"] = "67398b98-da5a-4f94-9a33-0748bcb4d5cf",
+  ["slot"] = "-1",
+  ["type"] = "keyboard",
+}

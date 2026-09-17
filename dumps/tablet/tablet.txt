@@ -1,0 +1,7 @@
+{
+  ["address"] = "7d1b7ae0-60bd-4087-b266-74d67ce56987",
+  ["getPitch"] = "function():number -- Gets the pitch of the player holding the tablet.",
+  ["getYaw"] = "function():number -- Gets the yaw of the player holding the tablet.",
+  ["slot"] = "-1",
+  ["type"] = "tablet",
+}

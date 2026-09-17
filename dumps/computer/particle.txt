@@ -1,0 +1,6 @@
+{
+  ["address"] = "46597f84-f900-401f-be3c-f368c0174c4b",
+  ["slot"] = "2",
+  ["spawn"] = "function(name:string, xCoord:number, yCoord:number, zCoord:number [, defaultVelo:number]):boolean; function(name:string, xCoord:number, yCoord:number, zCoord:number [, xVelo:number, yVelo:number, zVelo:number]):boolean; Spawns a particle effect at the specified relative coordinates optionally with the specified velocity",
+  ["type"] = "particle",
+}

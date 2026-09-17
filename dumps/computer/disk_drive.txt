@@ -1,0 +1,8 @@
+{
+  ["address"] = "d1228191-2ee0-4e26-92e5-02518b09fad1",
+  ["eject"] = "function([velocity:number]):boolean -- Eject the currently present medium from the drive.",
+  ["isEmpty"] = "function():boolean -- Checks whether some medium is currently in the drive.",
+  ["media"] = "function(): string -- Return the internal floppy disk address",
+  ["slot"] = "-1",
+  ["type"] = "disk_drive",
+}

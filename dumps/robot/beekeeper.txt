@@ -1,0 +1,13 @@
+{
+  ["addIndustrialUpgrade"] = "function(side:number[,amount:number]):number -- Tries to add amount many or all industrial upgrades from the selected slot to industrial apiary at the given side.",
+  ["address"] = "91a206dd-6d23-4047-b26e-9e7b37f62d2b",
+  ["analyze"] = "function(honeyslot:number):boolean -- Analyzes bee in selected slot, uses honey from the specified slot.",
+  ["canWork"] = "function(side:number):boolean -- Checks if current bee in the apiary at the specified side can work now.",
+  ["getBeeProgress"] = "function(side:number):number -- Get current progress percent for the apiary at the specified side.",
+  ["getIndustrialUpgrade"] = "function(side:number, slot: number):table -- Get industrial upgrade in the given slot of the industrial apiary at the given side.",
+  ["removeIndustrialUpgrade"] = "function(side:number, slot: number[, amount: number]):boolean -- Remove industrial upgrade from the given slot of the industrial apiary at the given side.",
+  ["slot"] = "2",
+  ["swapDrone"] = "function(side:number):boolean -- Swap the drone from the selected slot with the apiary at the specified side.",
+  ["swapQueen"] = "function(side:number):boolean -- Swap the queen from the selected slot with the apiary at the specified side.",
+  ["type"] = "beekeeper",
+}

@@ -1,0 +1,12 @@
+{
+  ["activate"] = "function():string; Activates the alarm",
+  ["address"] = "9846e502-39d0-4918-9bab-eff7b97f799a",
+  ["deactivate"] = "function():string; Deactivates the alarm",
+  ["greet"] = "function",
+  ["listSounds"] = "function():table; Returns a table of Alarm Sounds",
+  ["playSoundAt"] = "function(int:x, int:y, int:z, string:sound, float:range(1-10 recommended)):string; Plays sound at x y z",
+  ["setAlarm"] = "function(soundName:string):string; Sets the alarm sound",
+  ["setRange"] = "function(range:integer):string; Sets the range in blocks of the alarm",
+  ["slot"] = "-1",
+  ["type"] = "os_alarm",
+}

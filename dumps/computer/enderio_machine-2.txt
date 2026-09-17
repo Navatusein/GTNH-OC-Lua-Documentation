@@ -1,0 +1,17 @@
+{
+  ["address"] = "c9eb608f-e5c8-46b2-b89d-ca9fac74e753",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getIOMode"] = "function(side:number):string; Returns the current IO mode on the given side",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["getPowerPerTick"] = "function():number; Returns the power use/production per tick",
+  ["getRedstoneMode"] = "function():string; Returns the current Redstone control mode",
+  ["io_modes"] = "table: 000002199702efe0",
+  ["isActive"] = "function():boolean; Returns whether the machine is currently active",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["redstone_modes"] = "table: 00000219970291a0",
+  ["setIOMode"] = "function(side:number,mode:string); Sets the IO mode on the given side",
+  ["setRedstoneMode"] = "function(mode:string); Sets the Redstone control mode",
+  ["slot"] = "-1",
+  ["type"] = "enderio_machine",
+}

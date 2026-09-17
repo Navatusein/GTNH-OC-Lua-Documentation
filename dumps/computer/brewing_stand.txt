@@ -1,0 +1,6 @@
+{
+  ["address"] = "b2558b85-27ae-4ca5-b5cd-a06bc1ac851b",
+  ["getBrewTime"] = "function():number -- Get the number of ticks remaining of the current brewing operation.",
+  ["slot"] = "-1",
+  ["type"] = "brewing_stand",
+}

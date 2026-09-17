@@ -1,0 +1,14 @@
+{
+  ["address"] = "ad21ac98-06ad-4977-8d1a-180e6916d66e",
+  ["getBundledInput"] = "function([side:number[, color:number]]):number or table -- Fewer params returns set of inputs",
+  ["getBundledOutput"] = "function([side:number[, color:number]]):number or table -- Fewer params returns set of outputs",
+  ["getComparatorInput"] = "function(side:number):number -- Get the comparator input on the specified side.",
+  ["getInput"] = "function([side:number]):number or table -- Get the redstone input (all sides, or optionally on the specified side)",
+  ["getOutput"] = "function([side:number]):number or table -- Get the redstone output (all sides, or optionally on the specified side)",
+  ["getWakeThreshold"] = "function():number -- Get the current wake-up threshold.",
+  ["setBundledOutput"] = "function([side:number[, color:number,]] value:number or table):number or table --  Fewer params to assign set of outputs. Returns previous values",
+  ["setOutput"] = "function([side:number, ]value:number or table):number or table --  Set the redstone output (all sides, or optionally on the specified side). Returns previous values",
+  ["setWakeThreshold"] = "function(threshold:number):number -- Set the wake-up threshold.",
+  ["slot"] = "-1",
+  ["type"] = "redstone",
+}

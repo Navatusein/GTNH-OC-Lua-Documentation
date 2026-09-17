@@ -1,0 +1,6 @@
+{
+  ["address"] = "1e8c6921-96c6-4104-9ead-d79137be7625",
+  ["playNote"] = "function([instrument:number or string,] note:number [, volume:number]); Plays the specified note with the specified instrument or the default one; volume may be a number between 0 and 1",
+  ["slot"] = "-1",
+  ["type"] = "iron_noteblock",
+}

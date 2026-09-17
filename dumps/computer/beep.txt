@@ -1,0 +1,7 @@
+{
+  ["address"] = "0aa3ac65-3b02-44e9-a8e7-44b66c2ed268",
+  ["beep"] = "function(frequencyDurationTable:table):boolean; table needs to contain frequency-duration pairs; plays each frequency for the specified duration. Returns true on success.",
+  ["getBeepCount"] = "function():number; returns the amount of beeps currently being played",
+  ["slot"] = "2",
+  ["type"] = "beep",
+}

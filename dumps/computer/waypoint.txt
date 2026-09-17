@@ -1,0 +1,7 @@
+{
+  ["address"] = "b23da195-51c4-4546-8136-3230f05f3d53",
+  ["getLabel"] = "function(): string -- Get the current label of this waypoint.",
+  ["setLabel"] = "function(value:string) -- Set the label for this waypoint.",
+  ["slot"] = "-1",
+  ["type"] = "waypoint",
+}

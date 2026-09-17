@@ -1,0 +1,11 @@
+{
+  ["address"] = "c141e07a-cac0-4202-af25-c2ba55cf900a",
+  ["beep"] = "function([frequency:string or number[, duration:number]]) -- Plays a tone, useful to alert users via audible feedback.",
+  ["getDeviceInfo"] = "function():table -- Collect information on all connected devices.",
+  ["getProgramLocations"] = "function():table -- Returns a map of program name to disk label for known programs.",
+  ["isRunning"] = "function():boolean -- Returns whether the computer is running.",
+  ["slot"] = "-1",
+  ["start"] = "function():boolean -- Starts the computer. Returns true if the state changed.",
+  ["stop"] = "function():boolean -- Stops the computer. Returns true if the state changed.",
+  ["type"] = "computer",
+}

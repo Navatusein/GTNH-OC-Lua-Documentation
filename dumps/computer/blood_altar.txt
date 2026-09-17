@@ -1,0 +1,14 @@
+{
+  ["address"] = "6fefdba3-1908-4581-a128-de290d07331b",
+  ["getBufferCapacity"] = "function():number -- Get IO buffer capacity.",
+  ["getCapacity"] = "function():number -- Get the capacity.",
+  ["getCurrentBlood"] = "function():number -- Get the amount of blood currently contained by this altar.",
+  ["getDislocationMultiplier"] = "function():number -- Get the dislocation multiplier.",
+  ["getOrbMultiplier"] = "function():number -- Get the orb multiplier.",
+  ["getProgress"] = "function():number -- Get the progress.",
+  ["getSacrificeMultiplier"] = "function():number -- Get the sacrifice multiplier.",
+  ["getSelfSacrificeMultiplier"] = "function():number -- Get the self sacrifice multiplier.",
+  ["getTier"] = "function():number -- Get the current tier.",
+  ["slot"] = "-1",
+  ["type"] = "blood_altar",
+}

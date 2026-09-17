@@ -1,0 +1,12 @@
+{
+  ["address"] = "5b8a0962-80ab-40e1-9371-4e7d65fbaf08",
+  ["close"] = "function",
+  ["greet"] = "function",
+  ["isOpen"] = "function",
+  ["open"] = "function",
+  ["removePassword"] = "function",
+  ["setPassword"] = "function",
+  ["slot"] = "-1",
+  ["toggle"] = "function",
+  ["type"] = "os_door",
+}

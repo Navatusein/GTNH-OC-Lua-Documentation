@@ -1,0 +1,14 @@
+{
+  ["address"] = "9bf4a52e-4d34-4f71-8e3e-4324954aea26",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["getStorageConfiguration"] = "function(side:number[, slot:number]):boolean -- Get the configuration of the storage bus pointing in the specified direction.",
+  ["getStorageOreFilter"] = "function(side:number):boolean -- Get the ore filter of the storage bus pointing in the specified direction.",
+  ["getStorageSlotSize"] = "function(side:number):number -- Get the number of valid slots in this storage bus.",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["setStorageConfiguration"] = "function(side:number[, slot:number][, aspect:string OR detail:table]):boolean -- Configure the storage bus pointing in the specified direction to storage item stacks matching the specified descriptor.",
+  ["setStorageOreFilter"] = "function(side:number, filter: String):boolean -- Set the ore filter of the storage bus pointing in the specified direction.",
+  ["slot"] = "-1",
+  ["type"] = "essentia_storagebus",
+}

@@ -1,0 +1,15 @@
+{
+  ["address"] = "886636dc-a961-49cf-948b-e1cb0ce23a3e",
+  ["get"] = "function():string -- Get the currently stored byte array.",
+  ["getChecksum"] = "function():string -- Get the checksum of the data on this EEPROM.",
+  ["getData"] = "function():string -- Get the currently stored byte array.",
+  ["getDataSize"] = "function():number -- Get the storage capacity of this EEPROM.",
+  ["getLabel"] = "function():string -- Get the label of the EEPROM.",
+  ["getSize"] = "function():number -- Get the storage capacity of this EEPROM.",
+  ["makeReadonly"] = "function(checksum:string):boolean -- Make this EEPROM readonly if it isn't already. This process cannot be reversed!",
+  ["set"] = "function(data:string) -- Overwrite the currently stored byte array.",
+  ["setData"] = "function(data:string) -- Overwrite the currently stored byte array.",
+  ["setLabel"] = "function(data:string):string -- Set the label of the EEPROM.",
+  ["slot"] = "12",
+  ["type"] = "eeprom",
+}

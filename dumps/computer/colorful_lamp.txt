@@ -1,0 +1,7 @@
+{
+  ["address"] = "4bceb25c-591d-4de0-9cfd-aaa5f0939bed",
+  ["getLampColor"] = "function():number; Returns the current lamp color",
+  ["setLampColor"] = "function(color:number):boolean; Sets the lamp color; Set to 0 to turn the off the lamp; Returns true on success",
+  ["slot"] = "-1",
+  ["type"] = "colorful_lamp",
+}

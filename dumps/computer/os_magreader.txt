@@ -1,0 +1,7 @@
+{
+  ["address"] = "af7a98b6-7030-4167-a643-056d3b852d98",
+  ["greet"] = "function",
+  ["setEventName"] = "function(String:name):boolean; Sets the name of the event that gets sent when a card is swipped",
+  ["slot"] = "-1",
+  ["type"] = "os_magreader",
+}

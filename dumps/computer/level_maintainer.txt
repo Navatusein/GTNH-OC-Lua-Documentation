@@ -1,0 +1,11 @@
+{
+  ["active"] = "function():boolean Get Level Maintainer state",
+  ["address"] = "c8369e25-0e99-4210-b44a-24b025616c11",
+  ["getSlot"] = "function([slot:number]):table -- Get the slot status.",
+  ["isDone"] = "function(slot:number):boolean -- Get the crafting task state.",
+  ["isEnable"] = "function(slot:number):boolean -- Get the crafting state of slot.",
+  ["setEnable"] = "function(slot:number,value:boolean):boolean -- Set the crafting state of slot.",
+  ["setSlot"] = "function(slot:number[,database:address[,index:number]],quantity:number,batch:number):boolean -- Configuration the slot.",
+  ["slot"] = "-1",
+  ["type"] = "level_maintainer",
+}

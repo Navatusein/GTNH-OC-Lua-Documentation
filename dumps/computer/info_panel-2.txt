@@ -1,0 +1,15 @@
+{
+  ["address"] = "c9857b28-f16d-4709-9e91-2ae3a8c7bcd1",
+  ["getBackgroundColor"] = "function():number -- gets the background color of the panel",
+  ["getRotationHorizonally"] = "function():number -- gets the horizonal rotation of the panel",
+  ["getRotationVertically"] = "function():number -- gets the vertical rotation of the panel",
+  ["getTextColor"] = "function():number -- gets the text color of the panel",
+  ["getThickness"] = "function():number -- gets the thickness of the panel",
+  ["hasColorUpgrade"] = "function():boolean -- checks if the color upgrade is installed",
+  ["hasWebUpgrade"] = "function():boolean -- checks if the web upgrade is installed (should be false most of the time)",
+  ["rotateHorizonally"] = "function(value:number) -- sets the horizonal rotation of the panel. Only input 1-16, otherwise nothing will happen",
+  ["rotateVertically"] = "function(value:number) -- sets the vertical rotation of the panel. Only input 1-16, otherwise nothing will happen",
+  ["setThickness"] = "function(value:number) -- sets the thickness of the panel. Only input 1-16, otherwise nothing will happen",
+  ["slot"] = "-1",
+  ["type"] = "info_panel",
+}

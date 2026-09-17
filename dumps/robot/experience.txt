@@ -1,0 +1,7 @@
+{
+  ["address"] = "b3e0e3a3-350d-4cce-93f6-d5f058a4f51d",
+  ["consume"] = "function():boolean -- Tries to consume an enchanted item to add experience to the upgrade.",
+  ["level"] = "function():number -- The current level of experience stored in this experience upgrade.",
+  ["slot"] = "2",
+  ["type"] = "experience",
+}

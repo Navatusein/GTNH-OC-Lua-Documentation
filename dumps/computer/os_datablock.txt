@@ -1,0 +1,17 @@
+{
+  ["address"] = "44d88026-448e-4383-978a-2aa7a41cf2e3",
+  ["bCryptCheck"] = "function(plain-text:string, hash:string):boolean -- Checks bCrypt input vs hash supplied",
+  ["bCryptHash"] = "function(plain-text:string, optional rounds:int):string -- Computes the bCryptHash of the input plaintext, optionally supply rounds (4-15)",
+  ["crc32"] = "function(data:string):string -- Computes CRC-32 hash of the data. Result is in binary format",
+  ["decode64"] = "function(data:string):string -- Applies base64 decoding to the data.",
+  ["deflate"] = "function(data:string):string -- Applies deflate compression to the data.",
+  ["encode64"] = "function(data:string):string -- Applies base64 encoding to the data.",
+  ["getLimit"] = "function():number -- The maximum size of data that can be passed to other functions of the card.",
+  ["greet"] = "function",
+  ["inflate"] = "function(data:string):string -- Applies inflate decompression to the data.",
+  ["md5"] = "function(data:string):string -- function(data:string):string -- Computes MD5 hash of the data. Result is in binary format",
+  ["rot13"] = "function(data:string):string -- Applies rot13 to the data. ",
+  ["sha256"] = "function(data:string):string -- Computes SHA2-256 hash of the data. Result is in binary format.",
+  ["slot"] = "-1",
+  ["type"] = "os_datablock",
+}

@@ -1,0 +1,9 @@
+{
+  ["address"] = "05d0a60d-a997-4abd-af40-a936cd894684",
+  ["getGravity"] = "function():number -- Get the gravity of the world the device is currently in.",
+  ["getWindLevel"] = "function():number -- Get the wind level in the world the device is currently in.",
+  ["hasBreathableAtmosphere"] = "function():boolean -- Get whether the world the device is currently in has a breathable atmosphere.",
+  ["isGasPresent"] = "function(gas:string):boolean -- Get whether the world the device is currently in has the specified gas (e.g. oxygen or nitrogen).",
+  ["slot"] = "1",
+  ["type"] = "world_sensor",
+}

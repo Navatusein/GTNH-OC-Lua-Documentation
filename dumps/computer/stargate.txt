@@ -1,0 +1,16 @@
+{
+  ["address"] = "61a93a24-6bfb-4ee3-9c18-27b38ea6ee05",
+  ["closeIris"] = "function",
+  ["dial"] = "function",
+  ["disconnect"] = "function",
+  ["energyAvailable"] = "function",
+  ["energyToDial"] = "function",
+  ["irisState"] = "function",
+  ["localAddress"] = "function",
+  ["openIris"] = "function",
+  ["remoteAddress"] = "function",
+  ["sendMessage"] = "function",
+  ["slot"] = "-1",
+  ["stargateState"] = "function",
+  ["type"] = "stargate",
+}

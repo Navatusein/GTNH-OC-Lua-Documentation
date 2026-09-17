@@ -1,0 +1,11 @@
+{
+  ["address"] = "41290d6b-2a84-450a-ac73-504be46cca89",
+  ["canBreed"] = "function():boolean -- Can the bees breed?",
+  ["getBeeBreedingData"] = "function():table -- Get the full breeding list thingy.",
+  ["getBeeParents"] = "function(beeName:string):table -- Get the parents for a particular mutation",
+  ["getDrone"] = "function():table -- Get the drone",
+  ["getQueen"] = "function():table -- Get the queen",
+  ["listAllSpecies"] = "function():table -- Get all known bees mutations",
+  ["slot"] = "-1",
+  ["type"] = "magicbees_magicapiary",
+}

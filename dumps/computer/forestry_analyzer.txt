@@ -1,0 +1,12 @@
+{
+  ["address"] = "3d298487-7533-4f6b-b3a7-8b636392b9ce",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getIndividualOnDisplay"] = "function():boolean -- Get info on the currently present bee.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["getProgress"] = "function():boolean -- Get the progress of the current operation.",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["isWorking"] = "function():boolean -- Get whether the analyzer can work.",
+  ["slot"] = "-1",
+  ["type"] = "forestry_analyzer",
+}

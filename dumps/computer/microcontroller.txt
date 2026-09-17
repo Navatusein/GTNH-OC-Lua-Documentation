@@ -1,0 +1,11 @@
+{
+  ["address"] = "dce87eba-3e61-4e97-a419-2f96e9576aed",
+  ["isRunning"] = "function():boolean -- Returns whether the microcontroller is running.",
+  ["isSideOpen"] = "function(side:number):boolean -- Get whether network messages are sent via the specified side.",
+  ["lastError"] = "function():string -- Returns the reason the microcontroller crashed, if applicable.",
+  ["setSideOpen"] = "function(side:number, open:boolean):boolean -- Set whether network messages are sent via the specified side.",
+  ["slot"] = "-1",
+  ["start"] = "function():boolean -- Starts the microcontroller. Returns true if the state changed.",
+  ["stop"] = "function():boolean -- Stops the microcontroller. Returns true if the state changed.",
+  ["type"] = "microcontroller",
+}

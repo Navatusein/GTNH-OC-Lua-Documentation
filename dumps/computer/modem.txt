@@ -1,0 +1,16 @@
+{
+  ["address"] = "34b2048f-394a-41e9-8be6-214446615602",
+  ["broadcast"] = "function(port:number, data...) -- Broadcasts the specified data on the specified port.",
+  ["close"] = "function([port:number]):boolean -- Closes the specified port (default: all ports). Returns true if ports were closed.",
+  ["generateUUID"] = "function() -- Randomises the UUID",
+  ["getWakeMessage"] = "function():string, boolean -- Get the current wake-up message.",
+  ["isOpen"] = "function(port:number):boolean -- Whether the specified port is open.",
+  ["isWired"] = "function():boolean -- Whether this card has wired networking capability.",
+  ["isWireless"] = "function():boolean -- Whether this card has wireless networking capability.",
+  ["maxPacketSize"] = "function():number -- Gets the maximum packet size (config setting).",
+  ["open"] = "function(port:number):boolean -- Opens the specified port. Returns true if the port was opened.",
+  ["send"] = "function(address:string, port:number, data...) -- Sends the specified data to the specified target.",
+  ["setWakeMessage"] = "function(message:string[, fuzzy:boolean]):string -- Set the wake-up message and whether to ignore additional data/parameters.",
+  ["slot"] = "1",
+  ["type"] = "modem",
+}

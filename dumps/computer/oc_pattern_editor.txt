@@ -1,0 +1,13 @@
+{
+  ["address"] = "6e5bcfd3-a721-435c-aa17-d2a46cc5a773",
+  ["clearInterfacePatternInput"] = "function(slot:number, index:number):boolean -- Clear pattern input at the given index.",
+  ["clearInterfacePatternOutput"] = "function(slot:number, index:number):boolean -- Clear pattern output at the given index.",
+  ["getInterfaceConfiguration"] = "function([slot:number]):table -- Get the configuration of the interface.",
+  ["getInterfacePattern"] = "function([slot:number]):table -- Get the given pattern in the interface.",
+  ["setInterfacePatternFluidInput"] = "function(slot:number, database:address, entry:number, size:number, index:number):boolean -- Set the pattern fluid input at the given index.",
+  ["setInterfacePatternFluidOutput"] = "function(slot:number, database:address, entry:number, size:number, index:number):boolean -- Set the pattern fluid output at the given index.",
+  ["setInterfacePatternItemInput"] = "function(slot:number, database:address, entry:number, size:number, index:number):boolean -- Set the pattern item input at the given index.",
+  ["setInterfacePatternItemOutput"] = "function(slot:number, database:address, entry:number, size:number, index:number):boolean -- Set the pattern item output at the given index.",
+  ["slot"] = "-1",
+  ["type"] = "oc_pattern_editor",
+}

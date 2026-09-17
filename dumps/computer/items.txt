@@ -1,0 +1,11 @@
+{
+  ["address"] = "a707688e-ea40-4c6e-b30e-2a1a940297d8",
+  ["canBreed"] = "function():boolean -- Can the bees breed?",
+  ["getBeeBreedingData"] = "function():table -- Get the full breeding list thingy.",
+  ["getBeeParents"] = "function(beeName:string):table -- Get the parents for a particular mutation",
+  ["getDrone"] = "function():table -- Get the drone",
+  ["getQueen"] = "function():table -- Get the queen",
+  ["listAllSpecies"] = "function():table -- Get all known bees mutations",
+  ["slot"] = "-1",
+  ["type"] = "items",
+}

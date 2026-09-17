@@ -1,0 +1,15 @@
+{
+  ["address"] = "e7698036-3f7c-4fee-89ff-07e3baebb21b",
+  ["canInputFrom"] = "function(direction:number):boolean -- can pipe input from direction",
+  ["canOutputTo"] = "function(direction:number):boolean -- can pipe output to direction",
+  ["getAspectCount"] = "function(aspect:string):number -- Get amount of specific aspect stored in this block",
+  ["getAspects"] = "function():table -- Get the Aspects stored in the block",
+  ["getEssentiaAmount"] = "function(direction:number):number -- returnd amount of essentia",
+  ["getEssentiaType"] = "function(direction:number):string -- returns which essentia in pipe",
+  ["getMinimumSuction"] = "function():number -- returns minimum suction",
+  ["getSuctionAmount"] = "function(direction:number):number -- returnd amount of suction",
+  ["getSuctionType"] = "function(direction:number):string -- returns which aspect suction",
+  ["isConnectable"] = "function(direction:number):boolean -- returns is the pipe connectable from this direction",
+  ["slot"] = "-1",
+  ["type"] = "blockmetaldevice_1",
+}

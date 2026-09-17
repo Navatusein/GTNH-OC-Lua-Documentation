@@ -1,0 +1,8 @@
+{
+  ["address"] = "828cef10-2582-481e-a865-43138002c326",
+  ["count"] = "function():number -- Get the size of the item stack in the generator's queue.",
+  ["insert"] = "function([count:number]):boolean -- Tries to insert fuel from the selected slot into the generator's queue.",
+  ["remove"] = "function([count:number]):boolean -- Tries to remove items from the generator's queue.",
+  ["slot"] = "1",
+  ["type"] = "generator",
+}

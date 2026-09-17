@@ -1,0 +1,9 @@
+{
+  ["address"] = "742222d5-70a6-43f4-b55b-6a0f337823fa",
+  ["isProcessing"] = "function():boolean; Returns true if the device is currently processing text.",
+  ["say"] = "function(text:string):boolean; Say the specified message. Returns true on success, false and an error message otherwise.",
+  ["setVolume"] = "function(speed:number); Sets the volume of the speech box. Needs to be beween 0 and 1",
+  ["slot"] = "-1",
+  ["stop"] = "function():boolean; Stops the currently spoken phrase. Returns true on success, false and an error message otherwise.",
+  ["type"] = "speech_box",
+}

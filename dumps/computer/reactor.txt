@@ -1,0 +1,13 @@
+{
+  ["address"] = "194a3bce-3ad4-4b03-8966-8d80a8354e81",
+  ["getHeat"] = "function():number -- Get the reactor's heat.",
+  ["getMaxHeat"] = "function():number -- Get the reactor's maximum heat before exploding.",
+  ["getOfferedEnergy"] = "function",
+  ["getReactorEUOutput"] = "function():number -- Get the reactor's base EU/t value.",
+  ["getReactorEnergyOutput"] = "function():number -- Get the reactor's energy output. Not multiplied with the base EU/t value.",
+  ["getSlotInfo"] = "function(x:int,y:int):table -- Get information about the item stored in the given reactor slot.",
+  ["producesEnergy"] = "function():boolean -- Get whether the reactor is active and supposed to produce energy.",
+  ["setActive"] = "function(active:boolean): boolean -- activate or deactivate the reactor",
+  ["slot"] = "-1",
+  ["type"] = "reactor",
+}

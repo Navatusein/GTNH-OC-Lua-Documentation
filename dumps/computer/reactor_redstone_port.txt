@@ -1,0 +1,13 @@
+{
+  ["address"] = "2f9f21ad-a54b-4349-a1b0-9f483ec38eb5",
+  ["getEmitHeat"] = "function():number -- Get the reactor's emitted heat. Useful for fluid reactors.",
+  ["getHeat"] = "function():number -- Get the reactor's heat.",
+  ["getMaxHeat"] = "function():number -- Get the reactor's maximum heat before exploding.",
+  ["getReactorEUOutput"] = "function():number -- Get the reactor's base EU/t value.",
+  ["getReactorEnergyOutput"] = "function():number -- Get the reactor's energy output. Not multiplied with the base EU/t value.",
+  ["getSlotInfo"] = "function(x:int,y:int):table -- Get information about the item stored in the given reactor slot.",
+  ["producesEnergy"] = "function():boolean -- Get whether the reactor is active and supposed to produce energy.",
+  ["setActive"] = "function(active:boolean): boolean -- activate or deactivate the reactor",
+  ["slot"] = "-1",
+  ["type"] = "reactor_redstone_port",
+}

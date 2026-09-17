@@ -1,0 +1,7 @@
+{
+  ["address"] = "969c2d2c-173d-4c21-81fd-88536d599458",
+  ["getAspectCount"] = "function(aspect:string):number -- Get amount of specific aspect stored in this block",
+  ["getAspects"] = "function():table -- Get the Aspects stored in the block",
+  ["slot"] = "-1",
+  ["type"] = "blockmetaldevice_0",
+}

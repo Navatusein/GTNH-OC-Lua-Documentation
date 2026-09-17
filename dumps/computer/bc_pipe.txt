@@ -1,0 +1,14 @@
+{
+  ["address"] = "fb24d81c-8ae9-49ee-98da-aa5cae02be78",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["getPipeType"] = "function():string --  Returns the type of the pipe.",
+  ["hasGate"] = "function(side:number):boolean -- Returns whether the pipe has a gate on the specified side.",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["isPipeConnected"] = "function(side:number):boolean --  Returns whether the pipe is connected to something on the specified side.",
+  ["isWireActive"] = "function(color:string):boolean -- Returns whether the wired with the given color is active.",
+  ["isWired"] = "function(color:string):boolean -- Returns whether the pipe is wired with the given color.",
+  ["slot"] = "-1",
+  ["type"] = "bc_pipe",
+}

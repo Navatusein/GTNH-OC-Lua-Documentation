@@ -1,0 +1,9 @@
+{
+  ["address"] = "3149faa6-3f94-4b45-9337-f6ea0ab7fd45",
+  ["getBurnTime"] = "function():number -- The number of ticks that the furnace will keep burning from the last consumed fuel.",
+  ["getCookTime"] = "function():number -- The number of ticks that the current item has been cooking for.",
+  ["getCurrentItemBurnTime"] = "function():number -- The number of ticks that the currently burning fuel lasts in total.",
+  ["isBurning"] = "function():boolean -- Get whether the furnace is currently active.",
+  ["slot"] = "-1",
+  ["type"] = "furnace",
+}

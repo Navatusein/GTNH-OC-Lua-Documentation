@@ -1,0 +1,7 @@
+{
+  ["address"] = "8621ddce-afbc-41fc-b935-c308d93e789f",
+  ["isActive"] = "function():boolean -- Gets whether the chunkloader is currently active.",
+  ["setActive"] = "function(enabled:boolean):boolean -- Enables or disables the chunkloader, returns true if active changed",
+  ["slot"] = "3",
+  ["type"] = "chunkloader",
+}

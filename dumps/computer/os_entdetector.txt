@@ -1,0 +1,9 @@
+{
+  ["address"] = "9e0234db-75db-4e6d-85d8-41d7a205af11",
+  ["getLoc"] = "function",
+  ["greet"] = "function",
+  ["scanEntities"] = "function(optional:int:range):table; pushes a signal \"entityDetect\" for each entity in range (excluding players), optional set range.",
+  ["scanPlayers"] = "function(optional:int:range):table; pushes a signal \"entityDetect\" for each player in range, optional set range.",
+  ["slot"] = "-1",
+  ["type"] = "os_entdetector",
+}

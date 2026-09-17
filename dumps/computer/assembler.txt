@@ -1,0 +1,7 @@
+{
+  ["address"] = "d0da2fb5-600f-45ba-9286-aa742c3a778b",
+  ["slot"] = "-1",
+  ["start"] = "function():boolean -- Start assembling, if possible. Returns whether assembly was started or not.",
+  ["status"] = "function(): string, number or boolean -- The current state of the assembler, `busy' or `idle', followed by the progress or template validity, respectively.",
+  ["type"] = "assembler",
+}

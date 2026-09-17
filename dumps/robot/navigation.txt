@@ -1,0 +1,9 @@
+{
+  ["address"] = "139341f2-7e4d-4cfc-a7d3-0aa47ef2bf64",
+  ["findWaypoints"] = "function(range:number):table -- Find waypoints in the specified range.",
+  ["getFacing"] = "function():number -- Get the current orientation of the robot.",
+  ["getPosition"] = "function():number, number, number -- Get the current relative position of the robot.",
+  ["getRange"] = "function():number -- Get the operational range of the navigation upgrade.",
+  ["slot"] = "2",
+  ["type"] = "navigation",
+}

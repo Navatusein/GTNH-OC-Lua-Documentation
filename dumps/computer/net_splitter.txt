@@ -1,0 +1,9 @@
+{
+  ["address"] = "19179680-a25f-4b63-b1cd-0c29c471184f",
+  ["close"] = "function(side: number):boolean -- Close the side, returns true if it changed to close.",
+  ["getSides"] = "function():table -- Returns current open/close state of all sides in an array, indexed by direction.",
+  ["open"] = "function(side: number):boolean -- Open the side, returns true if it changed to open.",
+  ["setSides"] = "function(settings:table):table -- set open state (true/false) of all sides in an array; index by direction. Returns previous states",
+  ["slot"] = "-1",
+  ["type"] = "net_splitter",
+}

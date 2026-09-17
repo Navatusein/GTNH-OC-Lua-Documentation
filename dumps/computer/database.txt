@@ -1,0 +1,12 @@
+{
+  ["address"] = "ceb23428-1bf6-4815-8953-7c77ed93bb1b",
+  ["clear"] = "function(slot:number):boolean -- Clears the specified slot. Returns true if there was something in the slot before.",
+  ["clone"] = "function(address:string):number -- Copies the data stored in this database to another database with the specified address.",
+  ["computeHash"] = "function(slot:number):string -- Computes a hash value for the item stack in the specified slot.",
+  ["copy"] = "function(fromSlot:number, toSlot:number[, address:string]):boolean -- Copies an entry to another slot, optionally to another database. Returns true if something was overwritten.",
+  ["get"] = "function(slot:number):table -- Get the representation of the item stack stored in the specified slot.",
+  ["indexOf"] = "function(hash:string):number -- Get the index of an item stack with the specified hash. Returns a negative value if no such stack was found.",
+  ["set"] = "function(slot:number, id:string, damage:number, nbt:string):boolean - Set an item into the specified database slot. NBT tag is expected in JSON format.",
+  ["slot"] = "-1",
+  ["type"] = "database",
+}

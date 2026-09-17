@@ -1,0 +1,12 @@
+{
+  ["address"] = "b8fbf309-1245-4bcd-af15-3dc05666ad25",
+  ["getWakeThreshold"] = "function():number -- Get the current wake-up threshold.",
+  ["getWirelessFrequency"] = "function():number -- Get the currently set wireless redstone frequency.",
+  ["getWirelessInput"] = "function():number -- Get the wireless redstone input.",
+  ["getWirelessOutput"] = "function():boolean -- Get the wireless redstone output.",
+  ["setWakeThreshold"] = "function(threshold:number):number -- Set the wake-up threshold.",
+  ["setWirelessFrequency"] = "function(frequency:number):number -- Set the wireless redstone frequency to use.",
+  ["setWirelessOutput"] = "function(value:boolean):boolean -- Set the wireless redstone output.",
+  ["slot"] = "8",
+  ["type"] = "redstone",
+}

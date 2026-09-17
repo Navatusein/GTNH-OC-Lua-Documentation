@@ -1,0 +1,9 @@
+{
+  ["address"] = "af8ba74b-989a-4e78-915b-ae7ee306f1bc",
+  ["getFluidInTank"] = "function(side:number [, tank:number]):table -- Get a description of the fluid in the the specified tank on the specified side.",
+  ["getTankCapacity"] = "function(side:number [, tank:number]):number -- Get the capacity of the specified tank on the specified side.",
+  ["getTankCount"] = "function(side:number):number -- Get the number of tanks available on the specified side.",
+  ["getTankLevel"] = "function(side:number [, tank:number]):number -- Get the amount of fluid in the specified tank on the specified side.",
+  ["slot"] = "-1",
+  ["type"] = "tank_controller",
+}

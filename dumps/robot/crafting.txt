@@ -1,0 +1,6 @@
+{
+  ["address"] = "ed64cf42-c6c1-4b12-a2a4-bb0b21fa1f22",
+  ["craft"] = "function([count:number]):number -- Tries to craft the specified number of items in the top left area of the inventory.",
+  ["slot"] = "3",
+  ["type"] = "crafting",
+}

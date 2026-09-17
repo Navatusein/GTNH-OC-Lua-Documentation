@@ -1,0 +1,10 @@
+{
+  ["address"] = "0746a907-7768-4a1b-a069-1122b2095864",
+  ["getDistance"] = "function():number; Returns the chat distance the chat box is currently set to",
+  ["getName"] = "function():string; Returns the name of the chat box",
+  ["say"] = "function(text:string [, distance:number]):boolean; Makes the chat box say some text with the currently set or the specified distance. Returns true on success",
+  ["setDistance"] = "function(distance:number):number; Sets the distance of the chat box. Returns the new distance",
+  ["setName"] = "function(name:string):string; Sets the name of the chat box. Returns the new name",
+  ["slot"] = "-1",
+  ["type"] = "chat_box",
+}

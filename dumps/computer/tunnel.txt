@@ -1,0 +1,10 @@
+{
+  ["address"] = "bc22c248-f067-4fbb-ad61-d985d4d269e3",
+  ["getChannel"] = "function():string -- Gets this link card's shared channel address",
+  ["getWakeMessage"] = "function():string, boolean -- Get the current wake-up message.",
+  ["maxPacketSize"] = "function():number -- Gets the maximum packet size (config setting).",
+  ["send"] = "function(data...) -- Sends the specified data to the card this one is linked to.",
+  ["setWakeMessage"] = "function(message:string[, fuzzy:boolean]):string -- Set the wake-up message and whether to ignore additional data/parameters.",
+  ["slot"] = "1",
+  ["type"] = "tunnel",
+}

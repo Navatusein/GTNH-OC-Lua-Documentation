@@ -1,0 +1,5 @@
+{
+  ["address"] = "a5359b04-8fc5-4e58-8cfc-21b60c6c8176",
+  ["slot"] = "5",
+  ["type"] = "keyboard",
+}

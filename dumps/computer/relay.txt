@@ -1,0 +1,9 @@
+{
+  ["address"] = "d0022f1f-f44a-4943-afce-670d524b8a33",
+  ["getStrength"] = "function():number -- Get the signal strength (range) used when relaying messages.",
+  ["isRepeater"] = "function():boolean -- Get whether the access point currently acts as a repeater (resend received wireless packets wirelessly).",
+  ["setRepeater"] = "function(enabled:boolean):boolean -- Set whether the access point should act as a repeater.",
+  ["setStrength"] = "function(strength:number):number -- Set the signal strength (range) used when relaying messages.",
+  ["slot"] = "-1",
+  ["type"] = "relay",
+}

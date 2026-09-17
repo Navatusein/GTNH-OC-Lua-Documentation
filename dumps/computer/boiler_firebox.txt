@@ -1,0 +1,8 @@
+{
+  ["address"] = "00f10e53-0b93-41c5-940e-aead2dda4c72",
+  ["getMaxHeat"] = "function():number -- Get the maximum temperature of the boiler.",
+  ["getTemperature"] = "function():number -- Get the temperature of the boiler.",
+  ["isBurning"] = "function():boolean -- Get whether the boiler is active or not.",
+  ["slot"] = "-1",
+  ["type"] = "boiler_firebox",
+}

@@ -1,0 +1,11 @@
+{
+  ["address"] = "2396d765-2e3d-422f-a2e5-cf6a55f3fb0c",
+  ["getAspectCount"] = "function(aspect:string):number -- Get amount of specific aspect stored in this block",
+  ["getAspects"] = "function():table -- Get the Aspects stored in the block",
+  ["getInstability"] = "function():number -- Get the instability.",
+  ["getSymmetry"] = "function():number -- Get the symmetry.",
+  ["isActive"] = "function():bool -- Return whether the matrix is active",
+  ["isCrafting"] = "function():bool -- Return whether the matrix is crafting",
+  ["slot"] = "-1",
+  ["type"] = "infusion_matrix",
+}

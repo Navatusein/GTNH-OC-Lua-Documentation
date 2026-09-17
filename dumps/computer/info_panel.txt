@@ -1,0 +1,9 @@
+{
+  ["address"] = "7028c093-6f95-4d73-8216-cf3dfde0f6b4",
+  ["getBackgroundColor"] = "function():number -- gets the background color of the panel",
+  ["getTextColor"] = "function():number -- gets the text color of the panel",
+  ["hasColorUpgrade"] = "function():boolean -- checks if the color upgrade is installed",
+  ["hasWebUpgrade"] = "function():boolean -- checks if the web upgrade is installed (should be false most of the time)",
+  ["slot"] = "-1",
+  ["type"] = "info_panel",
+}

@@ -1,0 +1,6 @@
+{
+  ["address"] = "ff38b46a-8ffa-49f5-a22c-a52a0a6f4deb",
+  ["push"] = "function([side:number]):boolean -- Tries to push the block on the specified side of the container of the upgrade. Defaults to front.",
+  ["slot"] = "3",
+  ["type"] = "piston",
+}

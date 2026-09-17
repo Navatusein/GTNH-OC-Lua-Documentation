@@ -1,0 +1,8 @@
+{
+  ["address"] = "21216fc4-37b0-41a0-a26e-c56391c3cb08",
+  ["getLevels"] = "function():number -- Get the number of levels for this beacon.",
+  ["getPrimaryEffect"] = "function():string -- Get the name of the active primary effect.",
+  ["getSecondaryEffect"] = "function():string -- Get the name of the active secondary effect.",
+  ["slot"] = "-1",
+  ["type"] = "beacon",
+}

@@ -1,0 +1,9 @@
+{
+  ["address"] = "6acd3e11-a3b4-45dc-8ffb-657ed4f00dec",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["slot"] = "-1",
+  ["type"] = "tilechest",
+}

@@ -1,0 +1,8 @@
+{
+  ["address"] = "44614bd1-ce02-4e96-825f-9c000fcdb6c8",
+  ["getRecord"] = "function():string -- Get the title of the record currently in the jukebox.",
+  ["play"] = "function() -- Start playing the record currently in the jukebox.",
+  ["slot"] = "-1",
+  ["stop"] = "function() -- Stop playing the record currently in the jukebox.",
+  ["type"] = "jukebox",
+}

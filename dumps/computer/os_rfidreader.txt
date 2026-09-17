@@ -1,0 +1,7 @@
+{
+  ["address"] = "2646779b-ce31-4247-95f9-c7f24383e244",
+  ["greet"] = "function",
+  ["scan"] = "function(optional:int:range):string; pushes a signal \"rfidData\" for each found rfid on all players in range, optional set range.",
+  ["slot"] = "-1",
+  ["type"] = "os_rfidreader",
+}

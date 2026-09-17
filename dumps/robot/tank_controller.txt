@@ -1,0 +1,15 @@
+{
+  ["address"] = "c53614db-a73b-44c4-8bb3-859255ec719d",
+  ["drain"] = "function([amount:number]):boolean -- Transfers fluid from a tank in the selected inventory slot to the selected tank.",
+  ["fill"] = "function([amount:number]):boolean -- Transfers fluid from the selected tank to a tank in the selected inventory slot.",
+  ["getFluidInInternalTank"] = "function([tank:number]):table -- Get a description of the fluid in the tank in the specified slot or the selected slot.",
+  ["getFluidInTank"] = "function(side:number [, tank:number]):table -- Get a description of the fluid in the the specified tank on the specified side.",
+  ["getFluidInTankInSlot"] = "function([slot:number]):table -- Get a description of the fluid in the tank item in the specified slot or the selected slot.",
+  ["getTankCapacity"] = "function(side:number [, tank:number]):number -- Get the capacity of the specified tank on the specified side.",
+  ["getTankCapacityInSlot"] = "function([slot:number]):number -- Get the capacity of the tank item in the specified slot of the robot or the selected slot.",
+  ["getTankCount"] = "function(side:number):number -- Get the number of tanks available on the specified side.",
+  ["getTankLevel"] = "function(side:number [, tank:number]):number -- Get the amount of fluid in the specified tank on the specified side.",
+  ["getTankLevelInSlot"] = "function([slot:number]):number -- Get the amount of fluid in the tank item in the specified slot or the selected slot.",
+  ["slot"] = "1",
+  ["type"] = "tank_controller",
+}

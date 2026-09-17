@@ -1,0 +1,12 @@
+{
+  ["address"] = "71311fe3-0235-46e3-8ba6-4f522f604bde",
+  ["getAspectRatio"] = "function():number, number -- The aspect ratio of the screen. For multi-block screens this is the number of blocks, horizontal and vertical.",
+  ["getKeyboards"] = "function():table -- The list of keyboards attached to the screen.",
+  ["isOn"] = "function():boolean -- Returns whether the screen is currently on.",
+  ["isPrecise"] = "function():boolean -- Returns whether the screen is in high precision mode (sub-pixel mouse event positions).",
+  ["setPrecise"] = "function(enabled:boolean):boolean -- Set whether to use high precision mode (sub-pixel mouse event positions).",
+  ["slot"] = "0",
+  ["turnOff"] = "function():boolean -- Turns off the screen. Returns whether the state changed, and whether it is now on.",
+  ["turnOn"] = "function():boolean -- Turns the screen on. Returns whether the state changed, and whether it is now on.",
+  ["type"] = "screen",
+}

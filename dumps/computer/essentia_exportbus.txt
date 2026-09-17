@@ -1,0 +1,16 @@
+{
+  ["address"] = "edfb68b1-29aa-4aa1-ab1c-7f1e08662834",
+  ["getEnergyStored"] = "function([direction:number=6]):number -- Returns the amount of stored energy for the given side.",
+  ["getExportConfiguration"] = "function(side:number[, slot:number]):string -- Get the configuration of the export bus pointing in the specified direction.",
+  ["getExportOreFilter"] = "function(side:number):boolean -- Get the ore filter of the export bus pointing in the specified direction.",
+  ["getExportSlotSize"] = "function(side:number):number -- Get the number of valid slots in this export bus.",
+  ["getMaxEnergyStored"] = "function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.",
+  ["getVoidAllowed"] = "function(side:number):boolean -- Get whether or not essentia exported into a void jar will allow voiding",
+  ["isEnergyProvider"] = "function():number -- Returns whether this component can provide energy.",
+  ["isEnergyReceiver"] = "function():number -- Returns whether this component can receive energy.",
+  ["setExportConfiguration"] = "function(side:number[, slot:number][, aspect:string OR detail:table]):boolean -- Configure the export bus pointing in the specified direction to export essentia matching the specified type.",
+  ["setExportOreFilter"] = "function(side:number, filter: String):boolean -- Set the ore filter of the export bus pointing in the specified direction.",
+  ["setVoidAllowed"] = "function(side:number, allowed:boolean):boolean -- Set void mode",
+  ["slot"] = "-1",
+  ["type"] = "essentia_exportbus",
+}
