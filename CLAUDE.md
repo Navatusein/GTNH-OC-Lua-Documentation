@@ -86,6 +86,7 @@ writing or changing a signature.
 | `OpenModularTurrets` | `tierOne..FiveTurretBase`, and the `modtur_turretbase*` component on the same blocks |
 | `SGCraft` | `stargate` |
 | `GT5-Unofficial` | almost nothing for us — only `GT-Data Server` (`imprintOrb`, `listData`). GregTech machine access lives in Computronics and OpenComputers, **not** here |
+| `Draconic-Evolution` | `flux_gate`, `fluid_gate`, `draconic_reactor`, `draconic_rf_storage`, `particle_generator` — all through `ManagedPeripheral`, see the note below |
 | `Applied-Energistics-2-Unofficial` | **no OC components of its own** (only a P2P tunnel and a `SidedEnvironment` part layer). Useful only to check which interfaces its tiles implement — e.g. `tile/powersink/RedstoneFlux.java` and `parts/layers/LayerIEnergyHandler.java` make every powered AE2 tile an RF `IEnergyReceiver` |
 
 ### How to read a component out of a mod source
@@ -138,7 +139,15 @@ writing or changing a signature.
    so OC's `DriverBlockInterface` (`me_interface`, priority 5) matches it in addition to the two
    fluid-interface drivers (priority 6) — the block ends up named `fluid_interface` but carrying
    the entire ME interface + `NetworkControl` API. Always check the tile's superclass chain.
-7. **An in-game dump beats source reading.** When the user provides output of
+7. **A `ManagedPeripheral` has no doc strings at all.** Draconic Evolution implements
+   `li.cil.oc.api.network.ManagedPeripheral` instead of annotating methods: the component
+   name comes from `IDEPeripheral.getName()`, the method list from `getMethodNames()`, and
+   the arguments only exist as casts inside `callMethod()`. A dump of such a block lists the
+   names with no signature, so parameters and return values have to be read out of
+   `callMethod` by hand. Watch for the peripheral living on a different block than the one
+   it controls — `draconic_reactor` answers on the Energy Injector and the Stabilizer, and
+   both forward to the reactor core.
+8. **An in-game dump beats source reading.** When the user provides output of
    `component.methods` / a proxy dump for a real block, that is the authoritative method set —
    it already accounts for compounding, subclassing and which mods are actually loaded. Use the
    source only to recover parameter names and descriptions for the methods that dump lists.

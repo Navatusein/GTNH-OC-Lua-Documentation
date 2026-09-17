@@ -141,6 +141,12 @@ INFO = {
     "steam_turbine": ("railcraft", "Steam Turbine"),
     "locomotive_relay": ("railcraft", "Locomotive Relay, driven by Computronics"),
     "ticket_machine": ("railcraft", "Ticket Machine, driven by Computronics"),
+    # --- Draconic Evolution -------------------------------------------------
+    "flux_gate": ("draconic", "Flux Gate, an RF transfer limiter"),
+    "fluid_gate": ("draconic", "Fluid Gate, a fluid transfer limiter"),
+    "draconic_reactor": ("draconic", "reactor, through an Energy Injector or a Stabilizer"),
+    "draconic_rf_storage": ("draconic", "Energy Pylon of an energy core"),
+    "particle_generator": ("draconic", "Particle Generator"),
     # --- other mods --------------------------------------------------------
     "glasses": ("other", "OpenGlasses — the AR glasses terminal"),
     "stargate": ("other", "SGCraft — a stargate"),
@@ -150,7 +156,7 @@ INFO = {
     "ender_chest": ("other", "EnderStorage — an ender chest"),
     "enderchest_1": ("other", "EnderStorage — an ender chest under a derived name"),
     "enderio_machine": ("other", "EnderIO — a machine"),
-    "draconicevolution_generator": ("other", "Draconic Evolution — a generator"),
+    "draconicevolution_generator": ("draconic", "a generator, only its RF energy methods"),
     "generatorfurnace": ("other", "a furnace generator"),
     "bc_pipe": ("other", "BuildCraft — a pipe"),
     "tierOneTurretBase": ("turrets", "tier one turret base, the turret API"),
@@ -187,6 +193,7 @@ GROUPS = [
     ("ic2", "IndustrialCraft 2"),
     ("railcraft", "Railcraft"),
     ("turrets", "Open Modular Turrets"),
+    ("draconic", "Draconic Evolution"),
     ("other", "Other mods"),
     ("vanilla", "Vanilla blocks, through an adapter"),
 ]

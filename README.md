@@ -85,12 +85,12 @@ At the moment documentation has been written for the following libraries:
 
 <a id="what-already-done-components"></a>
 
-Documentation is ready for the following 151 components, grouped by the mod that
+Documentation is ready for the following 156 components, grouped by the mod that
 provides them. Some names look odd — `caninv`, `blockjar_0`, `tile_for_apiculture_0_name` —
 because OpenComputers derives a component name from the block itself whenever no driver
 declares one. Those are the names the game really answers to.
 
-[OpenComputers — cards](#opencomputers--cards) (13) · [OpenComputers — upgrades](#opencomputers--upgrades) (18) · [OpenComputers — blocks and machines](#opencomputers--blocks-and-machines) (14) · [Applied Energistics 2](#applied-energistics-2) (10) · [AE2 Fluid Craft Rework](#ae2-fluid-craft-rework) (6) · [Thaumic Energistics](#thaumic-energistics) (4) · [GregTech](#gregtech) (6) · [Computronics](#computronics) (16) · [OpenSecurity](#opensecurity) (10) · [Forestry and Magic Bees](#forestry-and-magic-bees) (13) · [Thaumcraft](#thaumcraft) (6) · [IndustrialCraft 2](#industrialcraft-2) (3) · [Railcraft](#railcraft) (5) · [Open Modular Turrets](#open-modular-turrets) (10) · [Other mods](#other-mods) (11) · [Vanilla blocks, through an adapter](#vanilla-blocks-through-an-adapter) (6)
+[OpenComputers — cards](#opencomputers--cards) (13) · [OpenComputers — upgrades](#opencomputers--upgrades) (18) · [OpenComputers — blocks and machines](#opencomputers--blocks-and-machines) (14) · [Applied Energistics 2](#applied-energistics-2) (10) · [AE2 Fluid Craft Rework](#ae2-fluid-craft-rework) (6) · [Thaumic Energistics](#thaumic-energistics) (4) · [GregTech](#gregtech) (6) · [Computronics](#computronics) (16) · [OpenSecurity](#opensecurity) (10) · [Forestry and Magic Bees](#forestry-and-magic-bees) (13) · [Thaumcraft](#thaumcraft) (6) · [IndustrialCraft 2](#industrialcraft-2) (3) · [Railcraft](#railcraft) (5) · [Open Modular Turrets](#open-modular-turrets) (10) · [Draconic Evolution](#draconic-evolution) (6) · [Other mods](#other-mods) (10) · [Vanilla blocks, through an adapter](#vanilla-blocks-through-an-adapter) (6)
 
 #### OpenComputers — cards
 
@@ -296,13 +296,23 @@ declares one. Those are the names the game really answers to.
 | [`tierThreeTurretBase`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/abstracts/base-turret-base.lua) | tier three turret base, the turret API |
 | [`tierTwoTurretBase`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/abstracts/base-turret-base.lua) | tier two turret base, the turret API |
 
+#### Draconic Evolution
+
+| Component | What it is |
+| --- | --- |
+| [`draconic_reactor`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconic-reactor.lua) | reactor, through an Energy Injector or a Stabilizer |
+| [`draconic_rf_storage`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconic-rf-storage.lua) | Energy Pylon of an energy core |
+| [`draconicevolution_generator`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconicevolution-generator.lua) | a generator, only its RF energy methods |
+| [`fluid_gate`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/fluid-gate.lua) | Fluid Gate, a fluid transfer limiter |
+| [`flux_gate`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/flux-gate.lua) | Flux Gate, an RF transfer limiter |
+| [`particle_generator`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/particle-generator.lua) | Particle Generator |
+
 #### Other mods
 
 | Component | What it is |
 | --- | --- |
 | [`bc_pipe`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/bc-pipe.lua) | BuildCraft — a pipe |
 | [`blood_altar`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/blood-altar.lua) | Blood Magic — Blood Altar |
-| [`draconicevolution_generator`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/draconicevolution-generator.lua) | Draconic Evolution — a generator |
 | [`ender_chest`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/ender-chest.lua) | EnderStorage — an ender chest |
 | [`enderchest_1`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/enderchest-1.lua) | EnderStorage — an ender chest under a derived name |
 | [`enderio_machine`](https://github.com/Navatusein/GTNH-OC-Lua-Documentation/blob/main/lua/components/enderio-machine.lua) | EnderIO — a machine |

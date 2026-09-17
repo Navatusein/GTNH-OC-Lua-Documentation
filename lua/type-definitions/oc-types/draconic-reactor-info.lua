@@ -1,0 +1,15 @@
+---@meta _
+
+---The state of a Draconic Evolution reactor, as `getReactorInfo` reports it.
+---@class DraconicReactorInfo
+---@field status string # One of `"charging"`, `"charged"`, `"online"`, `"offline"`, `"stopping"`, `"invalid"`, `"beyond_hope"`.
+---@field temperature number # The reaction temperature.
+---@field fieldStrength number # The energy currently held by the containment field.
+---@field maxFieldStrength number # The maximum the containment field can hold.
+---@field fieldDrainRate number # How much the field loses per tick, which the injectors must cover.
+---@field energySaturation number # The energy currently saturating the core.
+---@field maxEnergySaturation number # The maximum saturation of the core.
+---@field generationRate number # The RF per tick the reactor is producing.
+---@field fuelConversion number # How much fuel has been converted so far.
+---@field maxFuelConversion number # The total fuel in the core.
+---@field fuelConversionRate number # The conversion rate, in nanograms per tick.

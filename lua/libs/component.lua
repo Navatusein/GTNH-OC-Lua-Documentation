@@ -38,6 +38,8 @@
 ---@field database database
 ---@field debug debug
 ---@field disk_drive disk_drive
+---@field draconic_reactor draconic_reactor
+---@field draconic_rf_storage draconic_rf_storage
 ---@field draconicevolution_generator draconicevolution_generator
 ---@field drive drive
 ---@field drone drone
@@ -51,9 +53,11 @@
 ---@field experience experience
 ---@field filesystem filesystem
 ---@field fluid_exportbus fluid_exportbus
+---@field fluid_gate fluid_gate
 ---@field fluid_importbus fluid_importbus
 ---@field fluid_interface fluid_interface
 ---@field fluid_storagebus fluid_storagebus
+---@field flux_gate flux_gate
 ---@field for_alveary_0 for_alveary_0
 ---@field for_alveary_3 for_alveary_3
 ---@field for_alveary_4 for_alveary_4
@@ -113,6 +117,7 @@
 ---@field os_magreader os_magreader
 ---@field os_rfidreader os_rfidreader
 ---@field particle particle
+---@field particle_generator particle_generator
 ---@field piston piston
 ---@field printer3d printer3d
 ---@field radar radar
