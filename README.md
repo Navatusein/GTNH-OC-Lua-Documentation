@@ -3,6 +3,11 @@
 > [!CAUTION]
 > The documentation is written for a modified version of [Open Computers](https://github.com/GTNewHorizons/OpenComputers) from GTNH modpack.
 
+> [!IMPORTANT]
+> The documentation targets **GTNH 2.9**. It is verified against components dumped from a
+> running 2.9 world, so on **2.8** some of the methods described here may not exist yet, and a
+> few may take different arguments. Everything documented is present in 2.9.
+
 
 ## Content
 - [Information](#information)
