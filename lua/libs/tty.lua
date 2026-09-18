@@ -11,22 +11,6 @@
 ---@field stream TtyStream # The stream `io.write` and `io.read` go through.
 local tty = {}
 
----The area the terminal draws into, in characters, and where the cursor is in it.
----@class TtyWindow
----@field gpu gpu|nil # The graphics card bound to the terminal.
----@field fullscreen boolean # Whether the window takes the whole screen.
----@field blink boolean # Whether the cursor blinks.
----@field width integer # The width of the window.
----@field height integer # The height of the window.
----@field dx integer # The x offset of the window on the screen.
----@field dy integer # The y offset of the window on the screen.
----@field x integer # The cursor column, one based, relative to the window.
----@field y integer # The cursor row, one based, relative to the window.
----@field output_buffer string # Text written but not yet flushed to the screen.
-
----@class TtyStream
-local ttyStream = {}
-
 ---Returns whether a graphics card and a screen are both bound and available.
 ---@return boolean
 function tty.isAvailable() end
@@ -78,24 +62,5 @@ function tty.clear() end
 ---Binds a graphics card to the terminal, and with it the screen that card is bound to.
 ---@param gpu gpu # A graphics card proxy.
 function tty.bind(gpu) end
-
----Scrolls the window by the given number of lines.
----
----**Prefer `term.write`** — this is the low level operation it is built on.
----@param lines integer # Positive scrolls down, negative scrolls up.
----@return integer # How many lines were actually scrolled.
-function ttyStream.scroll(lines) end
-
----Reads a line from the keyboard.
----
----**Prefer `io.read` or `term.read`** — they handle history, hints and interrupts.
----@return string|nil
-function ttyStream.read() end
-
----Writes text at the cursor, wrapping and scrolling as needed.
----
----**Prefer `io.write` or `term.write`.**
----@param value string
-function ttyStream:write(value) end
 
 return tty
