@@ -301,10 +301,11 @@ if listed - on_disk:
     raise SystemExit("library has no file: " + ", ".join(sorted(listed - on_disk)))
 
 readme = io.open(os.path.join(PROJ, "README.md"), encoding="utf-8").read()
-lib_marker = "At the moment documentation has been written for the following libraries:"
-lib_start = readme.index(lib_marker)
+lib_marker = '<a id="what-already-done-libraries"></a>'
+lib_start = readme.index(lib_marker) + len(lib_marker) + 1
 lib_end = readme.index('<a id="what-already-done-components"></a>')
 readme = (readme[:lib_start]
+          + chr(10)
           + "Documentation is ready for these %d libraries.\n" % len(listed)
           + "\n".join(lib_lines) + "\n\n"
           + readme[lib_end:])

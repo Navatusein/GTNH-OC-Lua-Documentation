@@ -60,6 +60,8 @@ For a list of supported components, see the section [What's already done](#what-
 
 ## What's already done
 
+<a id="what-already-done-libraries"></a>
+
 Documentation is ready for these 28 libraries.
 
 #### What a script reaches for
