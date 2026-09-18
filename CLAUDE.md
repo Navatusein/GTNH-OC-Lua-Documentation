@@ -17,17 +17,17 @@ the tail of components nobody has dumped yet — see the work plan below.
 ## Layout
 
 ```
-lua/libs/                        20 files — OC standard libraries (component, event, fs, term, ...)
-lua/components/                 151 files — one per component type
-lua/components/abstracts/        18 files — shared bases, one per mod driver (see below)
-lua/type-definitions/oc-types/   12 files — userdata returned by callbacks (ItemStack, StackSlot, Trade, ...)
-lua/type-definitions/ae-types/   10 files — AE2 userdata (AECpu, AECraftable, AECraftingJob, ME*Stack, ...)
+lua/libs/                        28 files — OC and OpenOS libraries (component, event, io, term, tty, ...)
+lua/components/                 165 files — one per component type
+lua/components/abstracts/        19 files — shared bases, one per mod driver (see below)
+lua/type-definitions/oc-types/   15 files — userdata returned by callbacks (ItemStack, StackSlot, TtyWindow, ...)
+lua/type-definitions/ae-types/   11 files — AE2 userdata (AECpu, AECraftable, AECraftingJob, ME*Stack, ...)
 lua/type-definitions/ic2-types/   2 files — IC2 userdata (CropNBT, ReactorComponent)
 lua/type-definitions/ar-glasses/ 27 files — OpenGlasses widgets and interfaces
 tools/dumper.lua                 the in-game dumper that produces dumps/
-tools/generate-readme.py         regenerates the component tables in README.md
+tools/generate-readme.py         regenerates the library and component tables in README.md
 tools/dump-to-stub.py            renders a dump into an annotated component stub
-dumps/computer|robot|tablet/    177 files — in-game proxy dumps, one per component per host
+dumps/computer|robot|tablet/    190 files — in-game proxy dumps, one per component per host
 docs/                            README screenshots only
 ```
 
@@ -53,6 +53,7 @@ only name a type and point at abstracts. The current set:
 | `BaseTurretBase` | the Open Modular Turrets `SimpleComponent` API |
 | `BaseModturTurretBase` | the essentia and energy component on the same turret block |
 | `BaseSpeech` | Computronics text to speech |
+| `BaseDraconicGate` | the Draconic Evolution flow gate, shared by the flux and fluid gates |
 
 `dumps/<host>/<type>.txt` holds the output of dumping a real component proxy in-game (the table
 of method name → doc string, plus `type`/`address`/`slot`). These are the highest-authority
@@ -332,12 +333,10 @@ Conventions):
 `sound` documents `modes` and `channel_count` as `---@field … table`, which the dump confirms —
 they really are tables, not callbacks, even though the source annotates them like methods.
 
-Still unverifiable: `tilechest` (needs the AE2 fork).
-
 ### C. Undocumented components — 26 source names left, and 8 of them are already covered
 
-Everything present in `dumps/` is documented and matches its dump: 159 component/host pairs,
-151 component types over 18 abstracts. Only `drone` and `leash` are written without a dump —
+Everything present in `dumps/` is documented and matches its dump: 172 component/host pairs,
+165 component types over 19 abstracts. Only `drone` and `leash` are written without a dump —
 from the mod source — because neither can be dumped in-game; verify them if that ever changes.
 
 **Read the remaining list with care.** It counts names found in the OpenComputers source, and
@@ -395,7 +394,8 @@ bucket-3 cases.
 
 ### E. Housekeeping — done
 
-- `ComponentLibrary` in `lua/libs/component.lua` now lists all 56 component types, sorted.
-  The `tilechests` field was a typo for the `tilechest` type and is gone.
+- `ComponentLibrary` in `lua/libs/component.lua` lists every component type, sorted, and is
+  regenerated from the files. The `tilechests` field was a typo for the `tilechest` type
+  and is gone.
 - `README.md`'s component list is regenerated from the files, so the broken `tilechest.lua`
   link is fixed and nothing is missing. Regenerate it whenever a component is added.
