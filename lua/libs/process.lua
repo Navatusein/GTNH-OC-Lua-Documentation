@@ -20,7 +20,7 @@ function process.info(levelOrThread) end
 ---(Deprecated) Returns information about the currently running process.
 ---@param levelOrThread? integer|thread # How many levels up to look, or the coroutine to look up. Defaults to 1, the current process.
 ---@return string, table, string # The process path, environment table, and process name.
-function process.running(level) end
+function process.running(levelOrThread) end
 
 ---Finds the process a coroutine belongs to.
 ---@param co? thread # The coroutine to look up. Defaults to the running one.
